@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */; };
+		9CA0308B20D1BA4D006F20A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308A20D1BA4D006F20A3 /* ViewController.swift */; };
+		9CA0308E20D1BA4D006F20A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0308C20D1BA4D006F20A3 /* Main.storyboard */; };
+		9CA0309020D1BA54006F20A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0308F20D1BA54006F20A3 /* Assets.xcassets */; };
+		9CA0309320D1BA54006F20A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0309120D1BA54006F20A3 /* LaunchScreen.storyboard */; };
+		9CA0309E20D1BA54006F20A3 /* MarvelousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0309D20D1BA54006F20A3 /* MarvelousTests.swift */; };
+		9CA030A920D1BA54006F20A3 /* MarvelousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA030A820D1BA54006F20A3 /* MarvelousUITests.swift */; };
+		9CA030AE20D1BA54006F20A3 /* Marvelous WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9CA030AD20D1BA54006F20A3 /* Marvelous WatchKit App.app */; };
+		9CA030B420D1BA54006F20A3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA030B220D1BA54006F20A3 /* Interface.storyboard */; };
+		9CA030B620D1BA57006F20A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA030B520D1BA57006F20A3 /* Assets.xcassets */; };
+		9CA030BD20D1BA57006F20A3 /* Marvelous WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9CA030BC20D1BA57006F20A3 /* Marvelous WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9CA030C220D1BA57006F20A3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA030C120D1BA57006F20A3 /* InterfaceController.swift */; };
+		9CA030C420D1BA57006F20A3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */; };
+		9CA030C620D1BA58006F20A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA030C520D1BA58006F20A3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CA0309A20D1BA54006F20A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA0307D20D1BA4D006F20A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA0308420D1BA4D006F20A3;
+			remoteInfo = Marvelous;
+		};
+		9CA030A520D1BA54006F20A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA0307D20D1BA4D006F20A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA0308420D1BA4D006F20A3;
+			remoteInfo = Marvelous;
+		};
+		9CA030AF20D1BA54006F20A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA0307D20D1BA4D006F20A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA030AC20D1BA54006F20A3;
+			remoteInfo = "Marvelous WatchKit App";
+		};
+		9CA030BE20D1BA57006F20A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA0307D20D1BA4D006F20A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA030BB20D1BA57006F20A3;
+			remoteInfo = "Marvelous WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CA030CD20D1BA58006F20A3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9CA030BD20D1BA57006F20A3 /* Marvelous WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030D120D1BA58006F20A3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9CA030AE20D1BA54006F20A3 /* Marvelous WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9CA0308520D1BA4D006F20A3 /* Marvelous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvelous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CA0308A20D1BA4D006F20A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CA0308D20D1BA4D006F20A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CA0308F20D1BA54006F20A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA0309220D1BA54006F20A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CA0309420D1BA54006F20A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA0309920D1BA54006F20A3 /* MarvelousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA0309D20D1BA54006F20A3 /* MarvelousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelousTests.swift; sourceTree = "<group>"; };
+		9CA0309F20D1BA54006F20A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA030A420D1BA54006F20A3 /* MarvelousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA030A820D1BA54006F20A3 /* MarvelousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelousUITests.swift; sourceTree = "<group>"; };
+		9CA030AA20D1BA54006F20A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA030AD20D1BA54006F20A3 /* Marvelous WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvelous WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA030B320D1BA54006F20A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9CA030B520D1BA57006F20A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA030B720D1BA57006F20A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA030BC20D1BA57006F20A3 /* Marvelous WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Marvelous WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA030C120D1BA57006F20A3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9CA030C520D1BA58006F20A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA030C720D1BA58006F20A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA0308220D1BA4D006F20A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0309620D1BA54006F20A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030A120D1BA54006F20A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030B920D1BA57006F20A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA0307C20D1BA4D006F20A3 = {
+			isa = PBXGroup;
+			children = (
+				9CA0308720D1BA4D006F20A3 /* Marvelous */,
+				9CA0309C20D1BA54006F20A3 /* MarvelousTests */,
+				9CA030A720D1BA54006F20A3 /* MarvelousUITests */,
+				9CA030B120D1BA54006F20A3 /* Marvelous WatchKit App */,
+				9CA030C020D1BA57006F20A3 /* Marvelous WatchKit Extension */,
+				9CA0308620D1BA4D006F20A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA0308620D1BA4D006F20A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0308520D1BA4D006F20A3 /* Marvelous.app */,
+				9CA0309920D1BA54006F20A3 /* MarvelousTests.xctest */,
+				9CA030A420D1BA54006F20A3 /* MarvelousUITests.xctest */,
+				9CA030AD20D1BA54006F20A3 /* Marvelous WatchKit App.app */,
+				9CA030BC20D1BA57006F20A3 /* Marvelous WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA0308720D1BA4D006F20A3 /* Marvelous */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */,
+				9CA0308A20D1BA4D006F20A3 /* ViewController.swift */,
+				9CA0308C20D1BA4D006F20A3 /* Main.storyboard */,
+				9CA0308F20D1BA54006F20A3 /* Assets.xcassets */,
+				9CA0309120D1BA54006F20A3 /* LaunchScreen.storyboard */,
+				9CA0309420D1BA54006F20A3 /* Info.plist */,
+			);
+			path = Marvelous;
+			sourceTree = "<group>";
+		};
+		9CA0309C20D1BA54006F20A3 /* MarvelousTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0309D20D1BA54006F20A3 /* MarvelousTests.swift */,
+				9CA0309F20D1BA54006F20A3 /* Info.plist */,
+			);
+			path = MarvelousTests;
+			sourceTree = "<group>";
+		};
+		9CA030A720D1BA54006F20A3 /* MarvelousUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA030A820D1BA54006F20A3 /* MarvelousUITests.swift */,
+				9CA030AA20D1BA54006F20A3 /* Info.plist */,
+			);
+			path = MarvelousUITests;
+			sourceTree = "<group>";
+		};
+		9CA030B120D1BA54006F20A3 /* Marvelous WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9CA030B220D1BA54006F20A3 /* Interface.storyboard */,
+				9CA030B520D1BA57006F20A3 /* Assets.xcassets */,
+				9CA030B720D1BA57006F20A3 /* Info.plist */,
+			);
+			path = "Marvelous WatchKit App";
+			sourceTree = "<group>";
+		};
+		9CA030C020D1BA57006F20A3 /* Marvelous WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9CA030C120D1BA57006F20A3 /* InterfaceController.swift */,
+				9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */,
+				9CA030C520D1BA58006F20A3 /* Assets.xcassets */,
+				9CA030C720D1BA58006F20A3 /* Info.plist */,
+			);
+			path = "Marvelous WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA0308420D1BA4D006F20A3 /* Marvelous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA030D220D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous" */;
+			buildPhases = (
+				9CA0308120D1BA4D006F20A3 /* Sources */,
+				9CA0308220D1BA4D006F20A3 /* Frameworks */,
+				9CA0308320D1BA4D006F20A3 /* Resources */,
+				9CA030D120D1BA58006F20A3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA030B020D1BA54006F20A3 /* PBXTargetDependency */,
+			);
+			name = Marvelous;
+			productName = Marvelous;
+			productReference = 9CA0308520D1BA4D006F20A3 /* Marvelous.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CA0309820D1BA54006F20A3 /* MarvelousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA030D520D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "MarvelousTests" */;
+			buildPhases = (
+				9CA0309520D1BA54006F20A3 /* Sources */,
+				9CA0309620D1BA54006F20A3 /* Frameworks */,
+				9CA0309720D1BA54006F20A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA0309B20D1BA54006F20A3 /* PBXTargetDependency */,
+			);
+			name = MarvelousTests;
+			productName = MarvelousTests;
+			productReference = 9CA0309920D1BA54006F20A3 /* MarvelousTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CA030A320D1BA54006F20A3 /* MarvelousUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA030D820D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "MarvelousUITests" */;
+			buildPhases = (
+				9CA030A020D1BA54006F20A3 /* Sources */,
+				9CA030A120D1BA54006F20A3 /* Frameworks */,
+				9CA030A220D1BA54006F20A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA030A620D1BA54006F20A3 /* PBXTargetDependency */,
+			);
+			name = MarvelousUITests;
+			productName = MarvelousUITests;
+			productReference = 9CA030A420D1BA54006F20A3 /* MarvelousUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9CA030AC20D1BA54006F20A3 /* Marvelous WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA030CE20D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous WatchKit App" */;
+			buildPhases = (
+				9CA030AB20D1BA54006F20A3 /* Resources */,
+				9CA030CD20D1BA58006F20A3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA030BF20D1BA57006F20A3 /* PBXTargetDependency */,
+			);
+			name = "Marvelous WatchKit App";
+			productName = "Marvelous WatchKit App";
+			productReference = 9CA030AD20D1BA54006F20A3 /* Marvelous WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9CA030BB20D1BA57006F20A3 /* Marvelous WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA030CA20D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous WatchKit Extension" */;
+			buildPhases = (
+				9CA030B820D1BA57006F20A3 /* Sources */,
+				9CA030B920D1BA57006F20A3 /* Frameworks */,
+				9CA030BA20D1BA57006F20A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Marvelous WatchKit Extension";
+			productName = "Marvelous WatchKit Extension";
+			productReference = 9CA030BC20D1BA57006F20A3 /* Marvelous WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA0307D20D1BA4D006F20A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = dcotton;
+				TargetAttributes = {
+					9CA0308420D1BA4D006F20A3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					9CA0309820D1BA54006F20A3 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9CA0308420D1BA4D006F20A3;
+					};
+					9CA030A320D1BA54006F20A3 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 9CA0308420D1BA4D006F20A3;
+					};
+					9CA030AC20D1BA54006F20A3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					9CA030BB20D1BA57006F20A3 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 9CA0308020D1BA4D006F20A3 /* Build configuration list for PBXProject "Marvelous" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CA0307C20D1BA4D006F20A3;
+			productRefGroup = 9CA0308620D1BA4D006F20A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA0308420D1BA4D006F20A3 /* Marvelous */,
+				9CA0309820D1BA54006F20A3 /* MarvelousTests */,
+				9CA030A320D1BA54006F20A3 /* MarvelousUITests */,
+				9CA030AC20D1BA54006F20A3 /* Marvelous WatchKit App */,
+				9CA030BB20D1BA57006F20A3 /* Marvelous WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA0308320D1BA4D006F20A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0309320D1BA54006F20A3 /* LaunchScreen.storyboard in Resources */,
+				9CA0309020D1BA54006F20A3 /* Assets.xcassets in Resources */,
+				9CA0308E20D1BA4D006F20A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0309720D1BA54006F20A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030A220D1BA54006F20A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030AB20D1BA54006F20A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA030B620D1BA57006F20A3 /* Assets.xcassets in Resources */,
+				9CA030B420D1BA54006F20A3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030BA20D1BA57006F20A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA030C620D1BA58006F20A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA0308120D1BA4D006F20A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0308B20D1BA4D006F20A3 /* ViewController.swift in Sources */,
+				9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA0309520D1BA54006F20A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA0309E20D1BA54006F20A3 /* MarvelousTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030A020D1BA54006F20A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA030A920D1BA54006F20A3 /* MarvelousUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA030B820D1BA57006F20A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA030C420D1BA57006F20A3 /* ExtensionDelegate.swift in Sources */,
+				9CA030C220D1BA57006F20A3 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CA0309B20D1BA54006F20A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA0308420D1BA4D006F20A3 /* Marvelous */;
+			targetProxy = 9CA0309A20D1BA54006F20A3 /* PBXContainerItemProxy */;
+		};
+		9CA030A620D1BA54006F20A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA0308420D1BA4D006F20A3 /* Marvelous */;
+			targetProxy = 9CA030A520D1BA54006F20A3 /* PBXContainerItemProxy */;
+		};
+		9CA030B020D1BA54006F20A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA030AC20D1BA54006F20A3 /* Marvelous WatchKit App */;
+			targetProxy = 9CA030AF20D1BA54006F20A3 /* PBXContainerItemProxy */;
+		};
+		9CA030BF20D1BA57006F20A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA030BB20D1BA57006F20A3 /* Marvelous WatchKit Extension */;
+			targetProxy = 9CA030BE20D1BA57006F20A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CA0308C20D1BA4D006F20A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA0308D20D1BA4D006F20A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CA0309120D1BA54006F20A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA0309220D1BA54006F20A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9CA030B220D1BA54006F20A3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA030B320D1BA54006F20A3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CA030C820D1BA58006F20A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CA030C920D1BA58006F20A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA030CB20D1BA58006F20A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Marvelous WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9CA030CC20D1BA58006F20A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Marvelous WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9CA030CF20D1BA58006F20A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Marvelous_WatchKit_Extension;
+				INFOPLIST_FILE = "Marvelous WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9CA030D020D1BA58006F20A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Marvelous_WatchKit_Extension;
+				INFOPLIST_FILE = "Marvelous WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9CA030D320D1BA58006F20A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Marvelous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CA030D420D1BA58006F20A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Marvelous/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CA030D620D1BA58006F20A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarvelousTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.MarvelousTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marvelous.app/Marvelous";
+			};
+			name = Debug;
+		};
+		9CA030D720D1BA58006F20A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarvelousTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.MarvelousTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marvelous.app/Marvelous";
+			};
+			name = Release;
+		};
+		9CA030D920D1BA58006F20A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarvelousUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.MarvelousUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marvelous;
+			};
+			name = Debug;
+		};
+		9CA030DA20D1BA58006F20A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MarvelousUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.MarvelousUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marvelous;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA0308020D1BA4D006F20A3 /* Build configuration list for PBXProject "Marvelous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA030C820D1BA58006F20A3 /* Debug */,
+				9CA030C920D1BA58006F20A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA030CA20D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA030CB20D1BA58006F20A3 /* Debug */,
+				9CA030CC20D1BA58006F20A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA030CE20D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA030CF20D1BA58006F20A3 /* Debug */,
+				9CA030D020D1BA58006F20A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA030D220D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA030D320D1BA58006F20A3 /* Debug */,
+				9CA030D420D1BA58006F20A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA030D520D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "MarvelousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA030D620D1BA58006F20A3 /* Debug */,
+				9CA030D720D1BA58006F20A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA030D820D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "MarvelousUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA030D920D1BA58006F20A3 /* Debug */,
+				9CA030DA20D1BA58006F20A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA0307D20D1BA4D006F20A3 /* Project object */;
+}
