@@ -14,19 +14,25 @@
             <objects>
                 <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Marvelous_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button alignment="left" id="a1k-lX-tJH">
-                            <group key="contentGroup" width="1" height="1" alignment="left" id="OMd-2U-Hee">
-                                <items>
-                                    <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="BvN-5g-UJW"/>
-                                </items>
-                            </group>
-                            <connections>
-                                <action selector="next" destination="AgC-eL-Hgc" id="m8c-3w-ZGV"/>
-                            </connections>
-                        </button>
+                        <group width="1" alignment="left" layout="overlap" id="vfG-05-mbq">
+                            <items>
+                                <button alignment="left" id="a1k-lX-tJH">
+                                    <group key="contentGroup" width="1" height="1" alignment="left" id="OMd-2U-Hee">
+                                        <items>
+                                            <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="BvN-5g-UJW"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <action selector="next" destination="AgC-eL-Hgc" id="m8c-3w-ZGV"/>
+                                    </connections>
+                                </button>
+                                <imageView width="30" height="30" alignment="center" verticalAlignment="center" animationDuration="1" id="JnQ-Ry-VQK"/>
+                            </items>
+                        </group>
                     </items>
                     <connections>
                         <outlet property="baseImage" destination="BvN-5g-UJW" id="L38-ce-Ewn"/>
+                        <outlet property="loadingSpinner" destination="JnQ-Ry-VQK" id="ztE-8C-nqB"/>
                     </connections>
                 </controller>
             </objects>

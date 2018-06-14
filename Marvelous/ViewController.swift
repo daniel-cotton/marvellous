@@ -79,8 +79,20 @@ class ViewController: UIViewController, WCSessionDelegate {
             
             let data = UIImageJPEGRepresentation(image, 1.0)
             
-            WCSession.default.sendMessage(["d": data!, "t": title, "c": count
+            WCSession.default.sendMessage(["action": "image", "d": data!, "t": title, "c": count
                 , "id": id], replyHandler: nil);
+        }
+    }
+    
+    func startLoadingOnWatch() {
+        DispatchQueue.main.async() {
+            WCSession.default.sendMessage(["action": "loading", "loading": true], replyHandler: nil);
+        }
+    }
+    
+    func stopLoadingOnWatch() {
+        DispatchQueue.main.async() {
+            WCSession.default.sendMessage(["action": "loading", "loading": false], replyHandler: nil);
         }
     }
     
@@ -115,6 +127,10 @@ class ViewController: UIViewController, WCSessionDelegate {
                     var count = images.count;
                     var id : String = subJson["id"].stringValue;
                     self.pingImageToWatch(image: image, title: key, count: count, id: id);
+                    
+                    if (self.imageMap.count == images.count) {
+                        self.stopLoadingOnWatch();
+                    }
                     
                     print("Pinged img \(key) of \(self.imageMap.count)");
                 }
@@ -165,6 +181,7 @@ class ViewController: UIViewController, WCSessionDelegate {
         {
             return
         }
+        startLoadingOnWatch();
         fetchProjectDetails(projectID: projectID!);
 //        let data: Data // received from a network request, for example
 //        let json = try? JSONSerialization.jsonObject(with: data, options: [])

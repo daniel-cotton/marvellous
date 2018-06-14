@@ -13,6 +13,9 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
+    @IBOutlet var loadingSpinner : WKInterfaceImage!;
+    @IBOutlet var baseImage: WKInterfaceImage!
+    
     var active : Int = 1;
     var imageMap : [String : UIImage] = [:];
     
@@ -20,13 +23,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         
     }
     
-    
-    @IBOutlet var baseImage: WKInterfaceImage!
-    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        loadingSpinner.setImageNamed("Activity");
+        loadingSpinner.setHidden(true);
     }
     
     func storePreference(key: String, value: String) {
@@ -54,51 +56,37 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         super.didDeactivate()
     }
     
-    func session(_ session: WCSession, didReceiveMessageData messageData: Data, replyHandler: @escaping (Data) -> Void) {
-        
-        guard let image = UIImage(data: messageData) else {
-            return
-        }
-        print("New image");
-        // throw to the main queue to upate properly
-        DispatchQueue.main.async() { [weak self] in
-            // update your UI here
-            self?.baseImage.setImage(image);
-        }
-        
-        replyHandler(messageData)
-    }
-    
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: @escaping ([String : AnyObject]) -> Void) {
-        guard let image = UIImage(data: message["d"] as! Data) else {
-            return
-        }
-        print("New image : \(message["t"])");
-        // throw to the main queue to upate properly
-        DispatchQueue.main.async() { [weak self] in
-            // update your UI here
-            self?.baseImage.setImage(image);
-        }
-        
-        replyHandler(message);
-    }
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        guard let image = UIImage(data: message["d"] as! Data) else {
-            return
-        }
-        print("New image : \(message["t"])");
-        // throw to the main queue to upate properly
-        DispatchQueue.main.async() { [weak self] in
-            // update your UI here
-            var id : String = message["id"] as! String;
-            var title : String = message["t"] as! String;
-            var strRep : String = "\(self!.active)";
-//            var count : String = message["c"] as! Number;
-            if (title == strRep) {
-                self?.baseImage.setImage(image);
+        
+        let action : String = message["action"] as! String;
+        print("Using action \(action)");
+        if (action == "loading") {
+            let isLoading : Bool = message["loading"] as! Bool;
+            loadingSpinner.setHidden(!isLoading);
+            if (isLoading) {
+                loadingSpinner.startAnimating();
+            } else {
+                loadingSpinner.stopAnimating();
             }
-            print("Count: \(message["c"]) - Img# \(message["t"])")
-            self?.imageMap[title] = image;
+        } else {
+            print("In else");
+            guard let image = UIImage(data: message["d"] as! Data) else {
+                return
+            }
+            print("New image : \(message["t"])");
+            // throw to the main queue to upate properly
+            DispatchQueue.main.async() { [weak self] in
+                // update your UI here
+                var id : String = message["id"] as! String;
+                var title : String = message["t"] as! String;
+                var strRep : String = "\(self!.active)";
+                //            var count : String = message["c"] as! Number;
+                if (title == strRep) {
+                    self?.baseImage.setImage(image);
+                }
+                print("Count: \(message["c"]) - Img# \(message["t"])")
+                self?.imageMap[title] = image;
+            }
         }
         
     }
