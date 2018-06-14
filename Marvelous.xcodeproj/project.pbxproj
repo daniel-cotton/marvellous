@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F18CFBFADF44F0DC88BDB0 /* Pods_MarvelousTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160BC3CDA1BE4B3F469BA07 /* Pods_MarvelousTests.framework */; };
+		50CAFD29C8A4A42D63ECD11A /* Pods_Marvelous_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2D65374F07E06254F0B356 /* Pods_Marvelous_WatchKit_Extension.framework */; };
+		5CB3E40B7847B59EBE0E3CF4 /* Pods_Marvelous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29EC141410EDA931DB7152E /* Pods_Marvelous.framework */; };
+		618B04D187632E87B0510984 /* Pods_MarvelousUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3A217929996FEAE3132A64 /* Pods_MarvelousUITests.framework */; };
+		9C26532920D1CB310010238C /* SwiftyJSON.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C26532820D1CB310010238C /* SwiftyJSON.swift */; };
 		9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */; };
 		9CA0308B20D1BA4D006F20A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308A20D1BA4D006F20A3 /* ViewController.swift */; };
 		9CA0308E20D1BA4D006F20A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0308C20D1BA4D006F20A3 /* Main.storyboard */; };
@@ -21,6 +26,9 @@
 		9CA030C220D1BA57006F20A3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA030C120D1BA57006F20A3 /* InterfaceController.swift */; };
 		9CA030C420D1BA57006F20A3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */; };
 		9CA030C620D1BA58006F20A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA030C520D1BA58006F20A3 /* Assets.xcassets */; };
+		9CA0BBAA20D1DDCC00BD380D /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA0BBA920D1DDCC00BD380D /* WatchConnectivity.framework */; };
+		9CA0BBAC20D1DDE200BD380D /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA0BBAB20D1DDE100BD380D /* WatchConnectivity.framework */; };
+		DD57964B45541BD43773291B /* Pods_Marvelous_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72454F46B79C527C8233D4A /* Pods_Marvelous_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +88,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1160BC3CDA1BE4B3F469BA07 /* Pods_MarvelousTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelousTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		120B3189EC9A7FEA72E16FE3 /* Pods-MarvelousUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousUITests/Pods-MarvelousUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		33293BC51D7133C11C8767F3 /* Pods-Marvelous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous/Pods-Marvelous.release.xcconfig"; sourceTree = "<group>"; };
+		4AD131B793B88025E9351DEC /* Pods-Marvelous WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous WatchKit Extension/Pods-Marvelous WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		6AE716EF1EB756DC83AC0C6E /* Pods-MarvelousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousTests/Pods-MarvelousTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B2D65374F07E06254F0B356 /* Pods_Marvelous_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelous_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F2D4C4459C4F990CA367A3 /* Pods-MarvelousUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousUITests/Pods-MarvelousUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C26532820D1CB310010238C /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Pods/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		9CA0308520D1BA4D006F20A3 /* Marvelous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvelous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA0308A20D1BA4D006F20A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,13 +118,37 @@
 		9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		9CA030C520D1BA58006F20A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CA030C720D1BA58006F20A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA0BBA620D1D26D00BD380D /* Marvelous.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Marvelous.entitlements; sourceTree = "<group>"; };
+		9CA0BBA720D1DC7900BD380D /* Marvelous WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Marvelous WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		9CA0BBA820D1DC8600BD380D /* Marvelous WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Marvelous WatchKit App.entitlements"; sourceTree = "<group>"; };
+		9CA0BBA920D1DDCC00BD380D /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		9CA0BBAB20D1DDE100BD380D /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		A29EC141410EDA931DB7152E /* Pods_Marvelous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97FDDBF2FB902D2E9CEFF6A /* Pods-Marvelous WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous WatchKit App/Pods-Marvelous WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		C140D6412E55B76FDAB5586A /* Pods-Marvelous WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous WatchKit App/Pods-Marvelous WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		D4A05F2CB673AECF35C09F9F /* Pods-Marvelous WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous WatchKit Extension/Pods-Marvelous WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		DF3A217929996FEAE3132A64 /* Pods_MarvelousUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelousUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D9AEE7B9A1437056568A44 /* Pods-MarvelousTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousTests/Pods-MarvelousTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECDB882518462DD51A493BCC /* Pods-Marvelous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous/Pods-Marvelous.debug.xcconfig"; sourceTree = "<group>"; };
+		F72454F46B79C527C8233D4A /* Pods_Marvelous_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelous_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		82C2ECAA09F3E497F0358AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD57964B45541BD43773291B /* Pods_Marvelous_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9CA0308220D1BA4D006F20A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA0BBAA20D1DDCC00BD380D /* WatchConnectivity.framework in Frameworks */,
+				5CB3E40B7847B59EBE0E3CF4 /* Pods_Marvelous.framework in Frameworks */,
+				9C26532920D1CB310010238C /* SwiftyJSON.swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F18CFBFADF44F0DC88BDB0 /* Pods_MarvelousTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618B04D187632E87B0510984 /* Pods_MarvelousUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA0BBAC20D1DDE200BD380D /* WatchConnectivity.framework in Frameworks */,
+				50CAFD29C8A4A42D63ECD11A /* Pods_Marvelous_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +189,8 @@
 				9CA030B120D1BA54006F20A3 /* Marvelous WatchKit App */,
 				9CA030C020D1BA57006F20A3 /* Marvelous WatchKit Extension */,
 				9CA0308620D1BA4D006F20A3 /* Products */,
+				9E90BF175FAC083457D5D63E /* Pods */,
+				D5FEA2EED49C9992F84C0E87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +209,7 @@
 		9CA0308720D1BA4D006F20A3 /* Marvelous */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0BBA620D1D26D00BD380D /* Marvelous.entitlements */,
 				9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */,
 				9CA0308A20D1BA4D006F20A3 /* ViewController.swift */,
 				9CA0308C20D1BA4D006F20A3 /* Main.storyboard */,
@@ -194,6 +241,7 @@
 		9CA030B120D1BA54006F20A3 /* Marvelous WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0BBA820D1DC8600BD380D /* Marvelous WatchKit App.entitlements */,
 				9CA030B220D1BA54006F20A3 /* Interface.storyboard */,
 				9CA030B520D1BA57006F20A3 /* Assets.xcassets */,
 				9CA030B720D1BA57006F20A3 /* Info.plist */,
@@ -204,12 +252,45 @@
 		9CA030C020D1BA57006F20A3 /* Marvelous WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0BBA720D1DC7900BD380D /* Marvelous WatchKit Extension.entitlements */,
 				9CA030C120D1BA57006F20A3 /* InterfaceController.swift */,
 				9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */,
 				9CA030C520D1BA58006F20A3 /* Assets.xcassets */,
 				9CA030C720D1BA58006F20A3 /* Info.plist */,
 			);
 			path = "Marvelous WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		9E90BF175FAC083457D5D63E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB882518462DD51A493BCC /* Pods-Marvelous.debug.xcconfig */,
+				33293BC51D7133C11C8767F3 /* Pods-Marvelous.release.xcconfig */,
+				B97FDDBF2FB902D2E9CEFF6A /* Pods-Marvelous WatchKit App.debug.xcconfig */,
+				C140D6412E55B76FDAB5586A /* Pods-Marvelous WatchKit App.release.xcconfig */,
+				4AD131B793B88025E9351DEC /* Pods-Marvelous WatchKit Extension.debug.xcconfig */,
+				D4A05F2CB673AECF35C09F9F /* Pods-Marvelous WatchKit Extension.release.xcconfig */,
+				6AE716EF1EB756DC83AC0C6E /* Pods-MarvelousTests.debug.xcconfig */,
+				E6D9AEE7B9A1437056568A44 /* Pods-MarvelousTests.release.xcconfig */,
+				120B3189EC9A7FEA72E16FE3 /* Pods-MarvelousUITests.debug.xcconfig */,
+				96F2D4C4459C4F990CA367A3 /* Pods-MarvelousUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5FEA2EED49C9992F84C0E87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0BBA920D1DDCC00BD380D /* WatchConnectivity.framework */,
+				9CA0BBAB20D1DDE100BD380D /* WatchConnectivity.framework */,
+				A29EC141410EDA931DB7152E /* Pods_Marvelous.framework */,
+				9C26532820D1CB310010238C /* SwiftyJSON.swift */,
+				F72454F46B79C527C8233D4A /* Pods_Marvelous_WatchKit_App.framework */,
+				6B2D65374F07E06254F0B356 /* Pods_Marvelous_WatchKit_Extension.framework */,
+				1160BC3CDA1BE4B3F469BA07 /* Pods_MarvelousTests.framework */,
+				DF3A217929996FEAE3132A64 /* Pods_MarvelousUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA030D220D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous" */;
 			buildPhases = (
+				5344D08437BCE7CC9E9A89E1 /* [CP] Check Pods Manifest.lock */,
 				9CA0308120D1BA4D006F20A3 /* Sources */,
 				9CA0308220D1BA4D006F20A3 /* Frameworks */,
 				9CA0308320D1BA4D006F20A3 /* Resources */,
 				9CA030D120D1BA58006F20A3 /* Embed Watch Content */,
+				8EB41A546DE30CDA4E697E4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +321,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA030D520D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "MarvelousTests" */;
 			buildPhases = (
+				6514ECD1CA6EEC9F6D67F7B4 /* [CP] Check Pods Manifest.lock */,
 				9CA0309520D1BA54006F20A3 /* Sources */,
 				9CA0309620D1BA54006F20A3 /* Frameworks */,
 				9CA0309720D1BA54006F20A3 /* Resources */,
@@ -256,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA030D820D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "MarvelousUITests" */;
 			buildPhases = (
+				363A71943B7449194D4A2C30 /* [CP] Check Pods Manifest.lock */,
 				9CA030A020D1BA54006F20A3 /* Sources */,
 				9CA030A120D1BA54006F20A3 /* Frameworks */,
 				9CA030A220D1BA54006F20A3 /* Resources */,
@@ -274,8 +359,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA030CE20D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous WatchKit App" */;
 			buildPhases = (
+				E10F12A0E6A2B34B22AAB6BE /* [CP] Check Pods Manifest.lock */,
 				9CA030AB20D1BA54006F20A3 /* Resources */,
 				9CA030CD20D1BA58006F20A3 /* Embed App Extensions */,
+				82C2ECAA09F3E497F0358AD2 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,6 +378,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA030CA20D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous WatchKit Extension" */;
 			buildPhases = (
+				18A4B68F767D6481E82D4CD5 /* [CP] Check Pods Manifest.lock */,
 				9CA030B820D1BA57006F20A3 /* Sources */,
 				9CA030B920D1BA57006F20A3 /* Frameworks */,
 				9CA030BA20D1BA57006F20A3 /* Resources */,
@@ -316,6 +404,11 @@
 				TargetAttributes = {
 					9CA0308420D1BA4D006F20A3 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9CA0309820D1BA54006F20A3 = {
 						CreatedOnToolsVersion = 9.4;
@@ -327,9 +420,19 @@
 					};
 					9CA030AC20D1BA54006F20A3 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9CA030BB20D1BA57006F20A3 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -398,6 +501,117 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18A4B68F767D6481E82D4CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvelous WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363A71943B7449194D4A2C30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelousUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5344D08437BCE7CC9E9A89E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvelous-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6514ECD1CA6EEC9F6D67F7B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarvelousTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EB41A546DE30CDA4E697E4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Marvelous/Pods-Marvelous-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvelous/Pods-Marvelous-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10F12A0E6A2B34B22AAB6BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvelous WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CA0308120D1BA4D006F20A3 /* Sources */ = {
@@ -603,9 +817,12 @@
 		};
 		9CA030CB20D1BA58006F20A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AD131B793B88025E9351DEC /* Pods-Marvelous WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit Extension/Marvelous WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = "Marvelous WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -624,9 +841,12 @@
 		};
 		9CA030CC20D1BA58006F20A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A05F2CB673AECF35C09F9F /* Pods-Marvelous WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit Extension/Marvelous WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = "Marvelous WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -645,10 +865,13 @@
 		};
 		9CA030CF20D1BA58006F20A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97FDDBF2FB902D2E9CEFF6A /* Pods-Marvelous WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit App/Marvelous WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SVEK49W5;
 				IBSC_MODULE = Marvelous_WatchKit_Extension;
 				INFOPLIST_FILE = "Marvelous WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp";
@@ -663,10 +886,13 @@
 		};
 		9CA030D020D1BA58006F20A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C140D6412E55B76FDAB5586A /* Pods-Marvelous WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit App/Marvelous WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SVEK49W5;
 				IBSC_MODULE = Marvelous_WatchKit_Extension;
 				INFOPLIST_FILE = "Marvelous WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp";
@@ -681,9 +907,12 @@
 		};
 		9CA030D320D1BA58006F20A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDB882518462DD51A493BCC /* Pods-Marvelous.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Marvelous/Marvelous.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = Marvelous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -698,9 +927,12 @@
 		};
 		9CA030D420D1BA58006F20A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33293BC51D7133C11C8767F3 /* Pods-Marvelous.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Marvelous/Marvelous.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = Marvelous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,6 +947,7 @@
 		};
 		9CA030D620D1BA58006F20A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE716EF1EB756DC83AC0C6E /* Pods-MarvelousTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -735,6 +968,7 @@
 		};
 		9CA030D720D1BA58006F20A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D9AEE7B9A1437056568A44 /* Pods-MarvelousTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -755,6 +989,7 @@
 		};
 		9CA030D920D1BA58006F20A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120B3189EC9A7FEA72E16FE3 /* Pods-MarvelousUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -774,6 +1009,7 @@
 		};
 		9CA030DA20D1BA58006F20A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96F2D4C4459C4F990CA367A3 /* Pods-MarvelousUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,1276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24A2183BA6E42DCDFF714DA92887C87A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+		28398103738C627CBC6CF32CCC7545C8 /* Pods-Marvelous-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E38FCCE5B9AC4C8FB25B6E21C959F870 /* Pods-Marvelous-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A1AF0CAA4719772B2622BA743DE56F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+		419300240A101F1A92D63AED6F943474 /* Pods-Marvelous WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD74201095CBDCF145C0EFAECDC5573C /* Pods-Marvelous WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567724AE4E473CA18679DF8062F8455B /* Pods-Marvelous-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7EA987AE1B3CAC8B656E76C5F8D469 /* Pods-Marvelous-dummy.m */; };
+		5A4518F4CAC2DB1DDA13DCABAFCD8815 /* Pods-MarvelousTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99894B126A91DB26E97FDB3B668F4603 /* Pods-MarvelousTests-dummy.m */; };
+		5F4A60C110FC69FC3F510DB65932DC34 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */; };
+		64936BD35F145E81D5C9339B6FB48C5B /* Pods-Marvelous WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A6041743CE7498571D35A55E87FE1 /* Pods-Marvelous WatchKit App-dummy.m */; };
+		8A58B3E0429894706F8437587B769165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+		90F0102B563B5E5A4CCD1B39ACA11AF8 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8AB7DBFDFE581B4EA6194AD8FE9E2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */; };
+		AD63918856D3EE20748EF08C8F8562D0 /* Pods-MarvelousUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5022A667F72ED41315CCBDB57C03496C /* Pods-MarvelousUITests-dummy.m */; };
+		AF265FF48659D4D28946717511B50FCA /* Pods-MarvelousTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF60DEA9025122AE041D4A55C8C03D2 /* Pods-MarvelousTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C37D061FBF2C8936A07CD7F9F43215FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */; };
+		CB1CFFE414E34439A2910BEF2DBCD3FB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		D3E32E2AABF0F4816E883E0634526C51 /* Pods-Marvelous WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61588C6135D853AE2BC72E4C80A4BB6F /* Pods-Marvelous WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFF933D69F2690605970519E8C6BA8BD /* Pods-Marvelous WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEA1CB459C971EF2809DEF19129A1E9 /* Pods-Marvelous WatchKit Extension-dummy.m */; };
+		E3CD8844D7DBEF69317C5869B0C0E508 /* Pods-MarvelousUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FE81D101D0E90673AC5E4522D11E447 /* Pods-MarvelousUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F53D8F4A22BDBD5FF46B58420B4ECC4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AFBBA76057B88B1651F074E989F95A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F0E766E6FA2A57CC57198C95415DFF5;
+			remoteInfo = SwiftyJSON;
+		};
+		8EDFD94BB00B6679A0E6B1CA849FA7AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ACCCDBC02163C4B3CA622BB39815DFA;
+			remoteInfo = "Pods-Marvelous";
+		};
+		B5FE1118CAEE446FF5362BED13EA9551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ACCCDBC02163C4B3CA622BB39815DFA;
+			remoteInfo = "Pods-Marvelous";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EB33FC8EC695BB30E14AE377CD7F29 /* Pods-Marvelous WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marvelous WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C0AC160E62F07D8BBD3DB4868402467 /* Pods-MarvelousUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarvelousUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1485C691FFE047174128C6E91C080F42 /* Pods_MarvelousUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MarvelousUITests.framework; path = "Pods-MarvelousUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D2096974897598287571FAD1A303C /* Pods-Marvelous-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marvelous-acknowledgements.markdown"; sourceTree = "<group>"; };
+		18791D1555A5707AC3B6B16547CB6349 /* Pods-MarvelousUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarvelousUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E7A6041743CE7498571D35A55E87FE1 /* Pods-Marvelous WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marvelous WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		2369656FB625141A972D7F5A3A2024DA /* Pods-Marvelous.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Marvelous.modulemap"; sourceTree = "<group>"; };
+		25261B6F469CC924A13F9612C42A3C8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D4237F46521E0871272FC77F88FB95B /* Pods-Marvelous WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvelous WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		37F6544619D1B4FE31780C8E7B1E04AB /* Pods-Marvelous WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvelous WatchKit App-resources.sh"; sourceTree = "<group>"; };
+		3A93B38EAB133775BD024C8A341D8C7D /* Pods-MarvelousTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarvelousTests-frameworks.sh"; sourceTree = "<group>"; };
+		3CD9716DAF17B508701C25111D238A4E /* Pods-MarvelousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelousTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40D04437E56213F4DACD2D04A8C489C0 /* Pods-MarvelousUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelousUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41FACFBB23DB35BC66BFE263AF9EACCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4774D5A7A72B3E9BF153575769C1D988 /* Pods-Marvelous WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvelous WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		485B350EB7358EEEA15C1A940BC1E179 /* Pods-MarvelousUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarvelousUITests-resources.sh"; sourceTree = "<group>"; };
+		4DE5BB6881F053ECBE5309976D26B8B3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF76F733A693B39C9C27FFD82BFA371 /* Pods-Marvelous-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvelous-resources.sh"; sourceTree = "<group>"; };
+		5022A667F72ED41315CCBDB57C03496C /* Pods-MarvelousUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarvelousUITests-dummy.m"; sourceTree = "<group>"; };
+		519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		535FC1E131795F8A91F442D465D2FC5B /* Pods-Marvelous-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marvelous-acknowledgements.plist"; sourceTree = "<group>"; };
+		61588C6135D853AE2BC72E4C80A4BB6F /* Pods-Marvelous WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marvelous WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		6909B68B64BD6E882BE147D76951FD51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EF1D371B9968EC0E34CADDB649A71C4 /* Pods-Marvelous WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marvelous WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FE81D101D0E90673AC5E4522D11E447 /* Pods-MarvelousUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarvelousUITests-umbrella.h"; sourceTree = "<group>"; };
+		71FEBD3788275BDADB2E9F5544B15E12 /* Pods-MarvelousTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarvelousTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72CA9C680C0C8646E86DCCD68821E530 /* Pods_Marvelous_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Marvelous_WatchKit_App.framework; path = "Pods-Marvelous WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A037BB50D390F94C3F4416726B88999 /* Pods_Marvelous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Marvelous.framework; path = "Pods-Marvelous.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7EA987AE1B3CAC8B656E76C5F8D469 /* Pods-Marvelous-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marvelous-dummy.m"; sourceTree = "<group>"; };
+		814B047516D19D542D9F41B0B110A556 /* Pods-Marvelous WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvelous WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		86268FDFEC846DAB8F1C55AAA6C39D5C /* Pods-MarvelousTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelousTests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99894B126A91DB26E97FDB3B668F4603 /* Pods-MarvelousTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarvelousTests-dummy.m"; sourceTree = "<group>"; };
+		AA1DEFED255662190D1F5506DFE88938 /* Pods-MarvelousUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarvelousUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABC9E8D8809031F9A3870C482DE6AF49 /* Pods-MarvelousTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarvelousTests-resources.sh"; sourceTree = "<group>"; };
+		AD3E20045D1110F0140111001126ED0A /* Pods-MarvelousUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelousUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADAF72FEA05254B310E20E6E0AC24939 /* Pods-Marvelous WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Marvelous WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE0DBDD16C8A7CD03020D54D2592705D /* Pods-Marvelous WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Marvelous WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		B06D71604B86A0FACFF3B7CEC56C0A16 /* Pods-Marvelous WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvelous WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
+		B0D8D9E1E9A297844DA92ED00EC62B96 /* Pods_Marvelous_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Marvelous_WatchKit_Extension.framework; path = "Pods-Marvelous WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B774736BBA236C511C2E58DACD4B1B18 /* Pods-Marvelous-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvelous-frameworks.sh"; sourceTree = "<group>"; };
+		B96159858FBBBA01B430086D6A646B45 /* Pods-Marvelous WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Marvelous WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		BBCE0B70D027EB951654242B9A9C7621 /* Pods-Marvelous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvelous.release.xcconfig"; sourceTree = "<group>"; };
+		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C5B8C5B91BBD02BC4517CF356B74E408 /* Pods-Marvelous WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Marvelous WatchKit App.modulemap"; sourceTree = "<group>"; };
+		CACF25596ABCECD00690467B3535501A /* Pods-Marvelous WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvelous WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		CD61ED614C4E573DED766BED5103D523 /* Pods-Marvelous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvelous.debug.xcconfig"; sourceTree = "<group>"; };
+		CFF88CD62477F9C0A3E82BEC140E4CC2 /* Pods-Marvelous WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marvelous WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		D015093FE1537EEDDB633755A8FC57EE /* Pods_MarvelousTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MarvelousTests.framework; path = "Pods-MarvelousTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		D43622E0C582D35254126992B91A3413 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D793D486546F14E0CD330B5295E015CE /* Pods-MarvelousTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarvelousTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E06976D1187A8A80665881270D875BA8 /* Pods-MarvelousUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarvelousUITests.modulemap"; sourceTree = "<group>"; };
+		E378AB3A34F482AA4A790911874FB70A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38FCCE5B9AC4C8FB25B6E21C959F870 /* Pods-Marvelous-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marvelous-umbrella.h"; sourceTree = "<group>"; };
+		E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF60DEA9025122AE041D4A55C8C03D2 /* Pods-MarvelousTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MarvelousTests-umbrella.h"; sourceTree = "<group>"; };
+		F7A83873DDD26F443E1488D1DCC0A632 /* Pods-Marvelous WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Marvelous WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		F8812E9E3DF2EF95DB7ABC610FCC5881 /* Pods-MarvelousTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MarvelousTests.modulemap"; sourceTree = "<group>"; };
+		FD74201095CBDCF145C0EFAECDC5573C /* Pods-Marvelous WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Marvelous WatchKit App-umbrella.h"; sourceTree = "<group>"; };
+		FDEA1CB459C971EF2809DEF19129A1E9 /* Pods-Marvelous WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marvelous WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F63162852E6A0BDCBF1EEBA651E397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8AB7DBFDFE581B4EA6194AD8FE9E2B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A798FC03826AD225D87177C6C75E906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37D061FBF2C8936A07CD7F9F43215FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54FD7C4E6A328B22AB8B5016FE5D0293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A58B3E0429894706F8437587B769165 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F15B49C727DCC88EE0D2E7B054DCED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1AF0CAA4719772B2622BA743DE56F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCD6CB06A3FDFEE08BB92ECAD57A40C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A2183BA6E42DCDFF714DA92887C87A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A150FA11E528C10B3C506CCBF46400 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D8F4A22BDBD5FF46B58420B4ECC4B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EDB28B8D8A0823FD3D01C74F341E4B5 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C4975B2083EBFB55CAF05CD02BA838CB /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		23E4CF3BAE487D32B32B8CC7CDACC989 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E54EFB63ADF8EA63A68C4FDBA1081603 /* Pods-Marvelous */,
+				6369ABCF29E69E543E6E675375533B96 /* Pods-Marvelous WatchKit App */,
+				4E6E9FDA40BA20F7CF00F12A69E230C6 /* Pods-Marvelous WatchKit Extension */,
+				821AA996F38FD9A5ED6EA0E488FEF0BE /* Pods-MarvelousTests */,
+				9F5D4017A8BC9AFBF1DA1203463A2743 /* Pods-MarvelousUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4E6E9FDA40BA20F7CF00F12A69E230C6 /* Pods-Marvelous WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E378AB3A34F482AA4A790911874FB70A /* Info.plist */,
+				B96159858FBBBA01B430086D6A646B45 /* Pods-Marvelous WatchKit Extension.modulemap */,
+				ADAF72FEA05254B310E20E6E0AC24939 /* Pods-Marvelous WatchKit Extension-acknowledgements.markdown */,
+				07EB33FC8EC695BB30E14AE377CD7F29 /* Pods-Marvelous WatchKit Extension-acknowledgements.plist */,
+				FDEA1CB459C971EF2809DEF19129A1E9 /* Pods-Marvelous WatchKit Extension-dummy.m */,
+				F7A83873DDD26F443E1488D1DCC0A632 /* Pods-Marvelous WatchKit Extension-frameworks.sh */,
+				B06D71604B86A0FACFF3B7CEC56C0A16 /* Pods-Marvelous WatchKit Extension-resources.sh */,
+				61588C6135D853AE2BC72E4C80A4BB6F /* Pods-Marvelous WatchKit Extension-umbrella.h */,
+				2D4237F46521E0871272FC77F88FB95B /* Pods-Marvelous WatchKit Extension.debug.xcconfig */,
+				CACF25596ABCECD00690467B3535501A /* Pods-Marvelous WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-Marvelous WatchKit Extension";
+			path = "Target Support Files/Pods-Marvelous WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6369ABCF29E69E543E6E675375533B96 /* Pods-Marvelous WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				41FACFBB23DB35BC66BFE263AF9EACCC /* Info.plist */,
+				C5B8C5B91BBD02BC4517CF356B74E408 /* Pods-Marvelous WatchKit App.modulemap */,
+				6EF1D371B9968EC0E34CADDB649A71C4 /* Pods-Marvelous WatchKit App-acknowledgements.markdown */,
+				AE0DBDD16C8A7CD03020D54D2592705D /* Pods-Marvelous WatchKit App-acknowledgements.plist */,
+				1E7A6041743CE7498571D35A55E87FE1 /* Pods-Marvelous WatchKit App-dummy.m */,
+				4774D5A7A72B3E9BF153575769C1D988 /* Pods-Marvelous WatchKit App-frameworks.sh */,
+				37F6544619D1B4FE31780C8E7B1E04AB /* Pods-Marvelous WatchKit App-resources.sh */,
+				FD74201095CBDCF145C0EFAECDC5573C /* Pods-Marvelous WatchKit App-umbrella.h */,
+				CFF88CD62477F9C0A3E82BEC140E4CC2 /* Pods-Marvelous WatchKit App.debug.xcconfig */,
+				814B047516D19D542D9F41B0B110A556 /* Pods-Marvelous WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-Marvelous WatchKit App";
+			path = "Target Support Files/Pods-Marvelous WatchKit App";
+			sourceTree = "<group>";
+		};
+		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
+				A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
+				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
+				CB1C10D70064085AE12E7C2F5BBDC24D /* Products */,
+				23E4CF3BAE487D32B32B8CC7CDACC989 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		821AA996F38FD9A5ED6EA0E488FEF0BE /* Pods-MarvelousTests */ = {
+			isa = PBXGroup;
+			children = (
+				D43622E0C582D35254126992B91A3413 /* Info.plist */,
+				F8812E9E3DF2EF95DB7ABC610FCC5881 /* Pods-MarvelousTests.modulemap */,
+				71FEBD3788275BDADB2E9F5544B15E12 /* Pods-MarvelousTests-acknowledgements.markdown */,
+				D793D486546F14E0CD330B5295E015CE /* Pods-MarvelousTests-acknowledgements.plist */,
+				99894B126A91DB26E97FDB3B668F4603 /* Pods-MarvelousTests-dummy.m */,
+				3A93B38EAB133775BD024C8A341D8C7D /* Pods-MarvelousTests-frameworks.sh */,
+				ABC9E8D8809031F9A3870C482DE6AF49 /* Pods-MarvelousTests-resources.sh */,
+				EFF60DEA9025122AE041D4A55C8C03D2 /* Pods-MarvelousTests-umbrella.h */,
+				3CD9716DAF17B508701C25111D238A4E /* Pods-MarvelousTests.debug.xcconfig */,
+				86268FDFEC846DAB8F1C55AAA6C39D5C /* Pods-MarvelousTests.release.xcconfig */,
+			);
+			name = "Pods-MarvelousTests";
+			path = "Target Support Files/Pods-MarvelousTests";
+			sourceTree = "<group>";
+		};
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F375DB63C3BCC11AF9808234753C618A /* iOS */,
+				1EDB28B8D8A0823FD3D01C74F341E4B5 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F5D4017A8BC9AFBF1DA1203463A2743 /* Pods-MarvelousUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25261B6F469CC924A13F9612C42A3C8C /* Info.plist */,
+				E06976D1187A8A80665881270D875BA8 /* Pods-MarvelousUITests.modulemap */,
+				18791D1555A5707AC3B6B16547CB6349 /* Pods-MarvelousUITests-acknowledgements.markdown */,
+				AD3E20045D1110F0140111001126ED0A /* Pods-MarvelousUITests-acknowledgements.plist */,
+				5022A667F72ED41315CCBDB57C03496C /* Pods-MarvelousUITests-dummy.m */,
+				0C0AC160E62F07D8BBD3DB4868402467 /* Pods-MarvelousUITests-frameworks.sh */,
+				485B350EB7358EEEA15C1A940BC1E179 /* Pods-MarvelousUITests-resources.sh */,
+				6FE81D101D0E90673AC5E4522D11E447 /* Pods-MarvelousUITests-umbrella.h */,
+				40D04437E56213F4DACD2D04A8C489C0 /* Pods-MarvelousUITests.debug.xcconfig */,
+				AA1DEFED255662190D1F5506DFE88938 /* Pods-MarvelousUITests.release.xcconfig */,
+			);
+			name = "Pods-MarvelousUITests";
+			path = "Target Support Files/Pods-MarvelousUITests";
+			sourceTree = "<group>";
+		};
+		A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */,
+				E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */,
+				83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */,
+				519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */,
+				D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */,
+				D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB1C10D70064085AE12E7C2F5BBDC24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A037BB50D390F94C3F4416726B88999 /* Pods_Marvelous.framework */,
+				72CA9C680C0C8646E86DCCD68821E530 /* Pods_Marvelous_WatchKit_App.framework */,
+				B0D8D9E1E9A297844DA92ED00EC62B96 /* Pods_Marvelous_WatchKit_Extension.framework */,
+				D015093FE1537EEDDB633755A8FC57EE /* Pods_MarvelousTests.framework */,
+				1485C691FFE047174128C6E91C080F42 /* Pods_MarvelousUITests.framework */,
+				4DE5BB6881F053ECBE5309976D26B8B3 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E54EFB63ADF8EA63A68C4FDBA1081603 /* Pods-Marvelous */ = {
+			isa = PBXGroup;
+			children = (
+				6909B68B64BD6E882BE147D76951FD51 /* Info.plist */,
+				2369656FB625141A972D7F5A3A2024DA /* Pods-Marvelous.modulemap */,
+				150D2096974897598287571FAD1A303C /* Pods-Marvelous-acknowledgements.markdown */,
+				535FC1E131795F8A91F442D465D2FC5B /* Pods-Marvelous-acknowledgements.plist */,
+				7B7EA987AE1B3CAC8B656E76C5F8D469 /* Pods-Marvelous-dummy.m */,
+				B774736BBA236C511C2E58DACD4B1B18 /* Pods-Marvelous-frameworks.sh */,
+				4FF76F733A693B39C9C27FFD82BFA371 /* Pods-Marvelous-resources.sh */,
+				E38FCCE5B9AC4C8FB25B6E21C959F870 /* Pods-Marvelous-umbrella.h */,
+				CD61ED614C4E573DED766BED5103D523 /* Pods-Marvelous.debug.xcconfig */,
+				BBCE0B70D027EB951654242B9A9C7621 /* Pods-Marvelous.release.xcconfig */,
+			);
+			name = "Pods-Marvelous";
+			path = "Target Support Files/Pods-Marvelous";
+			sourceTree = "<group>";
+		};
+		F375DB63C3BCC11AF9808234753C618A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E77640DDAFE615BB37FC5A8BC18E875D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DA0966BFF45079C9AFD9ED8F309D9B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3CD8844D7DBEF69317C5869B0C0E508 /* Pods-MarvelousUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		473100F663969349F1678D59463F6F32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419300240A101F1A92D63AED6F943474 /* Pods-Marvelous WatchKit App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD8E76DD55C4C9E6999F18F89040F47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF265FF48659D4D28946717511B50FCA /* Pods-MarvelousTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78ECF28BAE7DA16CB0B52C0750A1B91F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28398103738C627CBC6CF32CCC7545C8 /* Pods-Marvelous-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CADE2B499FBC7EE44892B8B6E6E4AE8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F0102B563B5E5A4CCD1B39ACA11AF8 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E8F156EDAF4D1E81D856949D31D554B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E32E2AABF0F4816E883E0634526C51 /* Pods-Marvelous WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F0E766E6FA2A57CC57198C95415DFF5 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ED4C401791C3C33D59E8F74E14A16AB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				C02A40B0AF9B86362AA3F99E2A16AD8E /* Sources */,
+				E6A150FA11E528C10B3C506CCBF46400 /* Frameworks */,
+				7CADE2B499FBC7EE44892B8B6E6E4AE8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 4DE5BB6881F053ECBE5309976D26B8B3 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F9EA3D5F94ABEE8D35C282D34690CFF /* Pods-Marvelous WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51063BA12024404DF121A028B1FE503E /* Build configuration list for PBXNativeTarget "Pods-Marvelous WatchKit App" */;
+			buildPhases = (
+				E51A16729457D9C320A7120405091E0C /* Sources */,
+				24F63162852E6A0BDCBF1EEBA651E397 /* Frameworks */,
+				473100F663969349F1678D59463F6F32 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Marvelous WatchKit App";
+			productName = "Pods-Marvelous WatchKit App";
+			productReference = 72CA9C680C0C8646E86DCCD68821E530 /* Pods_Marvelous_WatchKit_App.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6ACCCDBC02163C4B3CA622BB39815DFA /* Pods-Marvelous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA14CF0C39B8CC47B37811A663D88F9 /* Build configuration list for PBXNativeTarget "Pods-Marvelous" */;
+			buildPhases = (
+				97D9E93EB7B578F61F20271F8D9C93B6 /* Sources */,
+				9FCD6CB06A3FDFEE08BB92ECAD57A40C /* Frameworks */,
+				78ECF28BAE7DA16CB0B52C0750A1B91F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A50B2D8D3C70A60D62CB6B5A6B2C940 /* PBXTargetDependency */,
+			);
+			name = "Pods-Marvelous";
+			productName = "Pods-Marvelous";
+			productReference = 7A037BB50D390F94C3F4416726B88999 /* Pods_Marvelous.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8DCDE1CFDAF974100F114E825BAEF3DD /* Pods-Marvelous WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A9556D8EBE1AF8A8E26D468F41983E6 /* Build configuration list for PBXNativeTarget "Pods-Marvelous WatchKit Extension" */;
+			buildPhases = (
+				26A7935B7508C864DB63689817C1686B /* Sources */,
+				4A798FC03826AD225D87177C6C75E906 /* Frameworks */,
+				9E8F156EDAF4D1E81D856949D31D554B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Marvelous WatchKit Extension";
+			productName = "Pods-Marvelous WatchKit Extension";
+			productReference = B0D8D9E1E9A297844DA92ED00EC62B96 /* Pods_Marvelous_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB6E804EF91366B327A345E629BA322F /* Pods-MarvelousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED1E95713E54E4733CE510CCADEBE77 /* Build configuration list for PBXNativeTarget "Pods-MarvelousTests" */;
+			buildPhases = (
+				49586AF714AEC6ABCDEB65EE764398D7 /* Sources */,
+				6F15B49C727DCC88EE0D2E7B054DCED5 /* Frameworks */,
+				4BD8E76DD55C4C9E6999F18F89040F47 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F97CDFEB1B447EDBC611C73335030120 /* PBXTargetDependency */,
+			);
+			name = "Pods-MarvelousTests";
+			productName = "Pods-MarvelousTests";
+			productReference = D015093FE1537EEDDB633755A8FC57EE /* Pods_MarvelousTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD2F7E641E9B628C33AAB04D59816134 /* Pods-MarvelousUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FFFEF42AFC489DED0F11170AA303EEE /* Build configuration list for PBXNativeTarget "Pods-MarvelousUITests" */;
+			buildPhases = (
+				089A59FAF11B9FA004BC819B830906A1 /* Sources */,
+				54FD7C4E6A328B22AB8B5016FE5D0293 /* Frameworks */,
+				3DA0966BFF45079C9AFD9ED8F309D9B9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4A586E48C1A5F972DCBDE8E6AC1B58A /* PBXTargetDependency */,
+			);
+			name = "Pods-MarvelousUITests";
+			productName = "Pods-MarvelousUITests";
+			productReference = 1485C691FFE047174128C6E91C080F42 /* Pods_MarvelousUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CB1C10D70064085AE12E7C2F5BBDC24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6ACCCDBC02163C4B3CA622BB39815DFA /* Pods-Marvelous */,
+				3F9EA3D5F94ABEE8D35C282D34690CFF /* Pods-Marvelous WatchKit App */,
+				8DCDE1CFDAF974100F114E825BAEF3DD /* Pods-Marvelous WatchKit Extension */,
+				AB6E804EF91366B327A345E629BA322F /* Pods-MarvelousTests */,
+				DD2F7E641E9B628C33AAB04D59816134 /* Pods-MarvelousUITests */,
+				0F0E766E6FA2A57CC57198C95415DFF5 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		089A59FAF11B9FA004BC819B830906A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD63918856D3EE20748EF08C8F8562D0 /* Pods-MarvelousUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26A7935B7508C864DB63689817C1686B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF933D69F2690605970519E8C6BA8BD /* Pods-Marvelous WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49586AF714AEC6ABCDEB65EE764398D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4518F4CAC2DB1DDA13DCABAFCD8815 /* Pods-MarvelousTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97D9E93EB7B578F61F20271F8D9C93B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				567724AE4E473CA18679DF8062F8455B /* Pods-Marvelous-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02A40B0AF9B86362AA3F99E2A16AD8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4A60C110FC69FC3F510DB65932DC34 /* SwiftyJSON-dummy.m in Sources */,
+				CB1CFFE414E34439A2910BEF2DBCD3FB /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E51A16729457D9C320A7120405091E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64936BD35F145E81D5C9339B6FB48C5B /* Pods-Marvelous WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A50B2D8D3C70A60D62CB6B5A6B2C940 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 0F0E766E6FA2A57CC57198C95415DFF5 /* SwiftyJSON */;
+			targetProxy = 6AFBBA76057B88B1651F074E989F95A6 /* PBXContainerItemProxy */;
+		};
+		E4A586E48C1A5F972DCBDE8E6AC1B58A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Marvelous";
+			target = 6ACCCDBC02163C4B3CA622BB39815DFA /* Pods-Marvelous */;
+			targetProxy = B5FE1118CAEE446FF5362BED13EA9551 /* PBXContainerItemProxy */;
+		};
+		F97CDFEB1B447EDBC611C73335030120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Marvelous";
+			target = 6ACCCDBC02163C4B3CA622BB39815DFA /* Pods-Marvelous */;
+			targetProxy = 8EDFD94BB00B6679A0E6B1CA849FA7AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AFAE417C475E6AC13A1FC3EC6862C51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		297C4610085930CBA08D8045D4DA3752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1DEFED255662190D1F5506DFE88938 /* Pods-MarvelousUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarvelousUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarvelousUITests/Pods-MarvelousUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A5E283DF47891928BE0E3D392C27BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814B047516D19D542D9F41B0B110A556 /* Pods-Marvelous WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Marvelous WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Marvelous WatchKit App/Pods-Marvelous WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		4931E68142A7091C1378E6D30E842F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86268FDFEC846DAB8F1C55AAA6C39D5C /* Pods-MarvelousTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarvelousTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarvelousTests/Pods-MarvelousTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E4D7EDD1AB394F78CF5B42A642B2A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4237F46521E0871272FC77F88FB95B /* Pods-Marvelous WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Marvelous WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Marvelous WatchKit Extension/Pods-Marvelous WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		6489D343124169FAD6BADB52A9AA3BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D04437E56213F4DACD2D04A8C489C0 /* Pods-MarvelousUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarvelousUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarvelousUITests/Pods-MarvelousUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FEAB054F09D8B6EF4EC968E6EBBE3D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		7CB936FFDAC73C6F36FCDC056767C10E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CA032C05976D66D8FCB6B5F4541CFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD9716DAF17B508701C25111D238A4E /* Pods-MarvelousTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MarvelousTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MarvelousTests/Pods-MarvelousTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E9CF150EB429E5D8831D716825B2836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACF25596ABCECD00690467B3535501A /* Pods-Marvelous WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Marvelous WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Marvelous WatchKit Extension/Pods-Marvelous WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		B04602B8778301482E92109B5C9FC4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF88CD62477F9C0A3E82BEC140E4CC2 /* Pods-Marvelous WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Marvelous WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Marvelous WatchKit App/Pods-Marvelous WatchKit App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		B575CD9CDC9D53AEA3F1E2AF67DBDC6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9F57321A0360C5DDFDA7A73A03ADC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCE0B70D027EB951654242B9A9C7621 /* Pods-Marvelous.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Marvelous/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Marvelous/Pods-Marvelous.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD88DA3DD7E7799B0E9ED8967DCC961D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD61ED614C4E573DED766BED5103D523 /* Pods-Marvelous.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Marvelous/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Marvelous/Pods-Marvelous.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FFFEF42AFC489DED0F11170AA303EEE /* Build configuration list for PBXNativeTarget "Pods-MarvelousUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6489D343124169FAD6BADB52A9AA3BE9 /* Debug */,
+				297C4610085930CBA08D8045D4DA3752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFAE417C475E6AC13A1FC3EC6862C51 /* Debug */,
+				6FEAB054F09D8B6EF4EC968E6EBBE3D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ED4C401791C3C33D59E8F74E14A16AB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B575CD9CDC9D53AEA3F1E2AF67DBDC6D /* Debug */,
+				7CB936FFDAC73C6F36FCDC056767C10E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51063BA12024404DF121A028B1FE503E /* Build configuration list for PBXNativeTarget "Pods-Marvelous WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04602B8778301482E92109B5C9FC4A6 /* Debug */,
+				2A5E283DF47891928BE0E3D392C27BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED1E95713E54E4733CE510CCADEBE77 /* Build configuration list for PBXNativeTarget "Pods-MarvelousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA032C05976D66D8FCB6B5F4541CFD5 /* Debug */,
+				4931E68142A7091C1378E6D30E842F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A9556D8EBE1AF8A8E26D468F41983E6 /* Build configuration list for PBXNativeTarget "Pods-Marvelous WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4D7EDD1AB394F78CF5B42A642B2A27 /* Debug */,
+				8E9CF150EB429E5D8831D716825B2836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AA14CF0C39B8CC47B37811A663D88F9 /* Build configuration list for PBXNativeTarget "Pods-Marvelous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD88DA3DD7E7799B0E9ED8967DCC961D /* Debug */,
+				D9F57321A0360C5DDFDA7A73A03ADC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
