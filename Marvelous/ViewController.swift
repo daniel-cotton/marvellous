@@ -83,7 +83,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                 , "id": id, "width": width, "height": height], replyHandler: nil);
         }
     }
-        
+    
     func startLoadingOnWatch() {
         DispatchQueue.main.async() {
             WCSession.default.sendMessage(["action": "loading", "loading": true], replyHandler: nil);
@@ -93,6 +93,13 @@ class ViewController: UIViewController, WCSessionDelegate {
     func stopLoadingOnWatch() {
         DispatchQueue.main.async() {
             WCSession.default.sendMessage(["action": "loading", "loading": false], replyHandler: nil);
+        }
+    }
+    
+    func pingHotspotsToWatch(hotspotDictionary : [String : [[String : Any]]]) {
+        // [String : [[String : Any]]]
+        DispatchQueue.main.async() {
+            WCSession.default.sendMessage(["action": "hotspots", "hotspots": hotspotDictionary], replyHandler: nil);
         }
     }
     
@@ -163,9 +170,33 @@ class ViewController: UIViewController, WCSessionDelegate {
             
             //            // Convert the data to JSON
             let json = try JSON(data: data)
+            var dict : [String : [[String : Any]]] = [String : [[String : Any]]]();
+//            "x": 25,
+//            "y": 122,
+//            "x2": 295,
+//            "y2": 258,
+
             for (key,subJson):(String, JSON) in json {
-                print(subJson["id"]);
+                var array : [[String : Any]];
+                
+                if ((dict[subJson["img_owner_fk"].stringValue]) != nil) {
+                    array = dict[subJson["img_owner_fk"].stringValue]!;
+                } else {
+                    array = [];
+                }
+                array.append([
+                    "id": subJson["id"].stringValue,
+                    "destination": subJson["dest_img_fk"].stringValue,
+                    "x": subJson["x"].intValue,
+                    "y": subJson["y"].intValue,
+                    "x2": subJson["x2"].intValue,
+                    "y2": subJson["y2"].intValue
+                ]);
+                dict[subJson["img_owner_fk"].stringValue] = array;
             }
+            
+            pingHotspotsToWatch(hotspotDictionary: dict);
+            print("DICT", dict);
             
         } catch {
             print("Error info: \(error)")

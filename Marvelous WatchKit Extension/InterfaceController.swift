@@ -91,6 +91,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             } else {
                 loadingSpinner.stopAnimating();
             }
+        } else if (action == "hotspots") {
+            let hotspots : [String : [[String : Any]]] = message["hotspots"] as! [String : [[String : Any]]];
+            print("Received Hotspots", hotspots);
+            
         } else {
             print("In else");
             guard let image = UIImage(data: message["d"] as! Data) else {
