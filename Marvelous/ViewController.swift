@@ -74,13 +74,13 @@ class ViewController: UIViewController, WCSessionDelegate {
         replyHandler(messageData)
     }
     
-    func pingImageToWatch(image: UIImage, title : String, count : Int, id : String) {
+    func pingImageToWatch(image: UIImage, title : String, count : Int, id : String, width : Int, height : Int) {
         DispatchQueue.main.async() {
             
             let data = UIImageJPEGRepresentation(image, 1.0)
             
             WCSession.default.sendMessage(["action": "image", "d": data!, "t": title, "c": count
-                , "id": id], replyHandler: nil);
+                , "id": id, "width": width, "height": height], replyHandler: nil);
         }
     }
     
@@ -126,7 +126,9 @@ class ViewController: UIViewController, WCSessionDelegate {
                     self.imageMap[key] = image;
                     var count = images.count;
                     var id : String = subJson["id"].stringValue;
-                    self.pingImageToWatch(image: image, title: key, count: count, id: id);
+                    var width : Int = subJson["width"].intValue;
+                    var height : Int = subJson["height"].intValue;
+                    self.pingImageToWatch(image: image, title: key, count: count, id: id, width: width, height: height);
                     
                     if (self.imageMap.count == images.count) {
                         self.stopLoadingOnWatch();
@@ -161,11 +163,9 @@ class ViewController: UIViewController, WCSessionDelegate {
             
             //            // Convert the data to JSON
             let json = try JSON(data: data)
-            let images = json["images"];
-            for (key,subJson):(String, JSON) in images {
-                print(subJson["url"]);
+            for (key,subJson):(String, JSON) in json {
+                print(subJson["id"]);
             }
-            
             
         } catch {
             print("Error info: \(error)")
@@ -183,6 +183,7 @@ class ViewController: UIViewController, WCSessionDelegate {
         }
         startLoadingOnWatch();
         fetchProjectDetails(projectID: projectID!);
+        fetchProjectHotspots(projectID: projectID!);
 //        let data: Data // received from a network request, for example
 //        let json = try? JSONSerialization.jsonObject(with: data, options: [])
 

@@ -28,6 +28,7 @@
                             </gestureRecognizers>
                         </group>
                     </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <connections>
                         <outlet property="baseImage" destination="BvN-5g-UJW" id="L38-ce-Ewn"/>
                         <outlet property="loadingSpinner" destination="JnQ-Ry-VQK" id="ztE-8C-nqB"/>

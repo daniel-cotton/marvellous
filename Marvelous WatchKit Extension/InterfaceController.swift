@@ -18,13 +18,22 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     @IBOutlet var group : WKInterfaceGroup!;
     var active : Int = 1;
     var imageMap : [String : UIImage] = [:];
+    var imageSizes : [String : [Int]] = [:];
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
     
     @IBAction func handleGesture(gestureRecognizer : WKGestureRecognizer) {
-        print("TAP", gestureRecognizer.locationInObject());
+        print("TAP", gestureRecognizer.locationInObject(), gestureRecognizer.objectBounds());
+        
+        let resolvedTap : CGPoint = resolveXYTap(gestureRecognizer: gestureRecognizer);
+    }
+    func resolveXYTap(gestureRecognizer : WKGestureRecognizer) -> CGPoint {
+        let viewBounds : CGRect = gestureRecognizer.objectBounds();
+        let tapLocation : CGPoint = gestureRecognizer.locationInObject();
+        let finalTap : CGPoint = CGPoint(x: tapLocation.x / viewBounds.width, y: tapLocation.y / viewBounds.height);
+        return finalTap;
     }
     
     func handleClick() {
@@ -91,12 +100,15 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                 var id : String = message["id"] as! String;
                 var title : String = message["t"] as! String;
                 var strRep : String = "\(self!.active)";
+                let width : Int = message["width"] as! Int;
+                let height : Int = message["height"] as! Int;
                 //            var count : String = message["c"] as! Number;
                 if (title == strRep) {
                     self?.baseImage.setImage(image);
                 }
                 print("Count: \(message["c"]) - Img# \(message["t"])")
                 self?.imageMap[title] = image;
+                self?.imageSizes[title] = [width, height];
             }
         }
         
