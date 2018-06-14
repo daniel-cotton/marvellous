@@ -15,7 +15,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     @IBOutlet var loadingSpinner : WKInterfaceImage!;
     @IBOutlet var baseImage: WKInterfaceImage!
-    
+    @IBOutlet var group : WKInterfaceGroup!;
     var active : Int = 1;
     var imageMap : [String : UIImage] = [:];
     
@@ -23,6 +23,17 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         
     }
     
+    @IBAction func handleGesture(gestureRecognizer : WKGestureRecognizer) {
+        print("TAP", gestureRecognizer.locationInObject());
+    }
+    
+    func handleClick() {
+        
+    }
+    func segueToScreen(screenId : String) {
+        
+    }
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         

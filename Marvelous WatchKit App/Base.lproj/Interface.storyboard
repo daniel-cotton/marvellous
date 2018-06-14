@@ -16,18 +16,16 @@
                     <items>
                         <group width="1" alignment="left" layout="overlap" id="vfG-05-mbq">
                             <items>
-                                <button alignment="left" id="a1k-lX-tJH">
-                                    <group key="contentGroup" width="1" height="1" alignment="left" id="OMd-2U-Hee">
-                                        <items>
-                                            <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="BvN-5g-UJW"/>
-                                        </items>
-                                    </group>
-                                    <connections>
-                                        <action selector="next" destination="AgC-eL-Hgc" id="m8c-3w-ZGV"/>
-                                    </connections>
-                                </button>
+                                <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="BvN-5g-UJW"/>
                                 <imageView width="30" height="30" alignment="center" verticalAlignment="center" animationDuration="1" id="JnQ-Ry-VQK"/>
                             </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="zma-hd-Dtx">
+                                    <connections>
+                                        <action selector="handleGestureWithGestureRecognizer:" destination="AgC-eL-Hgc" id="oGU-oh-yx7"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
                         </group>
                     </items>
                     <connections>
