@@ -72,6 +72,25 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         let image : UIImage = imageMap[screenId]!;
         activeScreen = screenId;
         self.baseImage.setImage(image);
+        potentiallyStartTimer(screenId: screenId);
+    }
+    
+    func potentiallyStartTimer(screenId : String) {
+        var pageHotspots : [[String : Any]] = self.hotspots[screenId]!;
+        for (hotspot) : ([String : Any]) in pageHotspots {
+            let type : String = hotspot["action"] as! String;
+            if (type == "timer") {
+                let duration : Float = hotspot["timer"] as! Float;
+                let destination : String = hotspot["destination"] as! String;
+                let time = DispatchTime.now() + DispatchTimeInterval.seconds(Int(duration));
+                DispatchQueue.main.asyncAfter(deadline: time) {
+                    if (self.activeScreen == screenId) {
+                        self.segueToScreen(screenId: destination);
+                    }
+                }
+
+            }
+        }
     }
 
     override func awake(withContext context: Any?) {

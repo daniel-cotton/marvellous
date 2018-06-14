@@ -190,7 +190,9 @@ class ViewController: UIViewController, WCSessionDelegate {
                     "x": subJson["x"].intValue,
                     "y": subJson["y"].intValue,
                     "x2": subJson["x2"].intValue,
-                    "y2": subJson["y2"].intValue
+                    "y2": subJson["y2"].intValue,
+                    "action": subJson["action"].stringValue,
+                    "timer": subJson["timer"].floatValue
                 ]);
                 dict[subJson["img_owner_fk"].stringValue] = array;
             }
