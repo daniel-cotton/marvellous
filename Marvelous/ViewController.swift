@@ -83,7 +83,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                 , "id": id, "width": width, "height": height], replyHandler: nil);
         }
     }
-    
+        
     func startLoadingOnWatch() {
         DispatchQueue.main.async() {
             WCSession.default.sendMessage(["action": "loading", "loading": true], replyHandler: nil);

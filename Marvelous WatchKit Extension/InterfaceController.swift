@@ -19,15 +19,16 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     var active : Int = 1;
     var imageMap : [String : UIImage] = [:];
     var imageSizes : [String : [Int]] = [:];
+    var activeScreen : String = "";
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
     
     @IBAction func handleGesture(gestureRecognizer : WKGestureRecognizer) {
-        print("TAP", gestureRecognizer.locationInObject(), gestureRecognizer.objectBounds());
         
         let resolvedTap : CGPoint = resolveXYTap(gestureRecognizer: gestureRecognizer);
+        print("TAP", resolvedTap);
     }
     func resolveXYTap(gestureRecognizer : WKGestureRecognizer) -> CGPoint {
         let viewBounds : CGRect = gestureRecognizer.objectBounds();
@@ -36,11 +37,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         return finalTap;
     }
     
-    func handleClick() {
+    func handleClick(click : CGPoint) {
         
     }
     func segueToScreen(screenId : String) {
-        
+        let image : UIImage = imageMap[screenId]!;
+        activeScreen = screenId;
+        self.baseImage.setImage(image);
     }
 
     override func awake(withContext context: Any?) {
@@ -103,12 +106,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                 let width : Int = message["width"] as! Int;
                 let height : Int = message["height"] as! Int;
                 //            var count : String = message["c"] as! Number;
-                if (title == strRep) {
-                    self?.baseImage.setImage(image);
-                }
                 print("Count: \(message["c"]) - Img# \(message["t"])")
-                self?.imageMap[title] = image;
-                self?.imageSizes[title] = [width, height];
+                self?.imageMap[id] = image;
+                self?.imageSizes[id] = [width, height];
+                if (title == "1") {
+                    self?.segueToScreen(screenId: id);
+                }
             }
         }
         
