@@ -19,6 +19,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     var active : Int = 1;
     var imageMap : [String : UIImage] = [:];
     var imageSizes : [String : [Int]] = [:];
+    var hotspots : [String : [[String : Any]]] = [:];
     var activeScreen : String = "";
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
@@ -29,6 +30,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         
         let resolvedTap : CGPoint = resolveXYTap(gestureRecognizer: gestureRecognizer);
         print("TAP", resolvedTap);
+        handleClick(click: resolvedTap);
     }
     func resolveXYTap(gestureRecognizer : WKGestureRecognizer) -> CGPoint {
         let viewBounds : CGRect = gestureRecognizer.objectBounds();
@@ -38,7 +40,33 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     func handleClick(click : CGPoint) {
+        print("Click here:", click);
+        var pageHotspots : [[String : Any]] = self.hotspots[activeScreen]!;
+        let screenSizes : [Int] = self.imageSizes[activeScreen]!;
+        print("Hotspots for current page: ", pageHotspots);
         
+        for (hotspot) : ([String : Any]) in pageHotspots {
+            let hotspotX : CGFloat = CGFloat(hotspot["x"] as! Int);
+            let hotspotX2 : CGFloat = CGFloat(hotspot["x2"] as! Int);
+            let hotspotY : CGFloat = CGFloat(hotspot["y"] as! Int);
+            let hotspotY2 : CGFloat = CGFloat(hotspot["y2"] as! Int);
+            let hotspotRect : CGRect = CGRect(x: hotspotX, y: hotspotY, width: hotspotX2 - hotspotX, height: hotspotY2 - hotspotY);
+            let relativeHotspot : CGRect = CGRect(
+                x: hotspotRect.minX / CGFloat(screenSizes[0]),
+                y: hotspotRect.minY / CGFloat(screenSizes[1]),
+                width: hotspotRect.width / CGFloat(screenSizes[0]),
+                height: hotspotRect.height / CGFloat(screenSizes[1]));
+            print("Relative Hotspot", hotspotRect, relativeHotspot);
+            if (click.x >= relativeHotspot.minX &&
+                click.y >= relativeHotspot.minY &&
+                click.x <= relativeHotspot.maxX &&
+                click.y <= relativeHotspot.maxY) {
+                let destination : String = hotspot["destination"] as! String;
+                print("Valid Hotspot, going to page", destination);
+                segueToScreen(screenId: destination);
+            }
+        }
+        //
     }
     func segueToScreen(screenId : String) {
         let image : UIImage = imageMap[screenId]!;
@@ -92,9 +120,8 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                 loadingSpinner.stopAnimating();
             }
         } else if (action == "hotspots") {
-            let hotspots : [String : [[String : Any]]] = message["hotspots"] as! [String : [[String : Any]]];
+            hotspots = message["hotspots"] as! [String : [[String : Any]]];
             print("Received Hotspots", hotspots);
-            
         } else {
             print("In else");
             guard let image = UIImage(data: message["d"] as! Data) else {
