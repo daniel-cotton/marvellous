@@ -26,7 +26,8 @@ class ViewController: UIViewController, WCSessionDelegate {
     
     private var imageMap: [String: UIImage] = [:]
     
-    @IBOutlet weak var projectIdField: UITextField!
+    @IBOutlet weak var projectIdField: UITextField!;
+    @IBOutlet weak var headerView: UIView!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,12 @@ class ViewController: UIViewController, WCSessionDelegate {
             WCSession.default.delegate = self as! WCSessionDelegate
             WCSession.default.activate()
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        headerView.layer.shadowColor = UIColor.black.cgColor
+        headerView.layer.shadowOpacity = 0.3
+        headerView.layer.shadowOffset = CGSize.zero
+        headerView.layer.shadowRadius = 1
+        headerView.layer.shadowPath = UIBezierPath(rect: headerView.bounds).cgPath;
+
     }
 
     override func didReceiveMemoryWarning() {
