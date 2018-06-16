@@ -41,6 +41,9 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     func handleClick(click : CGPoint) {
         print("Click here:", click);
+        if (self.hotspots[activeScreen] == nil) {
+            return;
+        }
         var pageHotspots : [[String : Any]] = self.hotspots[activeScreen]!;
         let screenSizes : [Int] = self.imageSizes[activeScreen]!;
         print("Hotspots for current page: ", pageHotspots);
