@@ -117,6 +117,7 @@
                     <connections>
                         <outlet property="collectionView" destination="cTD-qw-Zag" id="XWw-Wa-VpX"/>
                         <outlet property="headerView" destination="eb9-Zs-cSp" id="bOQ-JM-Lba"/>
+                        <segue destination="Ass-X3-fC6" kind="showDetail" identifier="logoutSegue" id="8jH-Bo-QKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,7 +152,7 @@
                         <viewLayoutGuide key="safeArea" id="bza-as-6xs"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginSegue" id="EZ5-PN-FMC"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="loginSegue" id="EZ5-PN-FMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy1-tV-NXB" userLabel="First Responder" sceneMemberID="firstResponder"/>

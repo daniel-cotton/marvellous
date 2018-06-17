@@ -34,16 +34,27 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
         headerView.layer.shadowOffset = CGSize.zero
         headerView.layer.shadowRadius = 1
         headerView.layer.shadowPath = UIBezierPath(rect: headerView.bounds).cgPath;
+        let token = getPreference(key: "access_token");
+        if (token == nil) {
+            storePreference(key: "access_token", value: "");
+            self.performSegue(withIdentifier: "logoutSegue", sender: self)
+            return;
+        }
         apollo = {
             let configuration = URLSessionConfiguration.default
             // Add additional headers as needed
-            configuration.httpAdditionalHeaders = ["Authorization": "Bearer " + getPreference(key: "access_token")] // Replace `<token>`
+            configuration.httpAdditionalHeaders = ["Authorization": "Bearer " + token!] // Replace `<token>`
             
             let url = URL(string: "https://marvelapp.com/graphql")!
             
             return ApolloClient(networkTransport: HTTPNetworkTransport(url: url, configuration: configuration))
         }();
         apollo?.fetch(query: MainQueryQuery()) { (result, error) in
+            if (error != nil) {
+                self.storePreference(key: "access_token", value: "");
+                self.performSegue(withIdentifier: "logoutSegue", sender: self)
+                return;
+            }
             let data = result?.data;
             let projectArray = data?.user?.projects?.edges;
             for (project) in (projectArray)! {
@@ -123,9 +134,9 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
         defaults?.set(value, forKey: key);
     }
     
-    func getPreference(key: String) -> String {
+    func getPreference(key: String) -> String? {
         let defaults = UserDefaults(suiteName: "group.uk.co.daniel-cotton.marvelous")
-        return defaults!.string(forKey: key)!;
+        return defaults!.string(forKey: key);
     }
     
     func session(_ session: WCSession, didReceiveMessageData messageData: Data, replyHandler: @escaping (Data) -> Void) {
