@@ -123,7 +123,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         loadingSpinner.setHidden(true);
         let viewBounds : CGRect = WKInterfaceDevice.current().screenBounds;
         let scene : LandingScene = LandingScene(size: CGSize(width: viewBounds.width, height: viewBounds.height));
-//        scene.fill
         sceneInterface.presentScene(scene, transition: fadeReveal);
     }
     
