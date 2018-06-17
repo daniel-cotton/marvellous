@@ -11,7 +11,6 @@ import SpriteKit;
 import SpriteKit.SKView;
 
 class SKRenderer : SKScene {
-    let label = SKLabelNode(text: "Hello SpriteKit!")
     var Sprite : SKSpriteNode? = nil;
     public func setTexture(image: UIImage) {
         let Texture = SKTexture(image: image)

@@ -121,6 +121,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         // Configure interface objects here.
         loadingSpinner.setImageNamed("Activity");
         loadingSpinner.setHidden(true);
+        let viewBounds : CGRect = WKInterfaceDevice.current().screenBounds;
+        let scene : LandingScene = LandingScene(size: CGSize(width: viewBounds.width, height: viewBounds.height));
+//        scene.fill
+        sceneInterface.presentScene(scene, transition: fadeReveal);
     }
     
     func storePreference(key: String, value: String) {

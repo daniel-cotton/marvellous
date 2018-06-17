@@ -29,7 +29,7 @@
 		9CA0BBAA20D1DDCC00BD380D /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA0BBA920D1DDCC00BD380D /* WatchConnectivity.framework */; };
 		9CA0BBAC20D1DDE200BD380D /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA0BBAB20D1DDE100BD380D /* WatchConnectivity.framework */; };
 		9CACFC1220D5DCF0006F71E9 /* SKRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CACFC1120D5DCF0006F71E9 /* SKRenderer.swift */; };
-		9CACFC1420D6A489006F71E9 /* LandingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9CACFC1320D6A488006F71E9 /* LandingScene.sks */; };
+		9CACFC1820D6B155006F71E9 /* LandingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CACFC1520D6AF5B006F71E9 /* LandingScene.swift */; };
 		DD57964B45541BD43773291B /* Pods_Marvelous_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72454F46B79C527C8233D4A /* Pods_Marvelous_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,7 +126,7 @@
 		9CA0BBA920D1DDCC00BD380D /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		9CA0BBAB20D1DDE100BD380D /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		9CACFC1120D5DCF0006F71E9 /* SKRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRenderer.swift; sourceTree = "<group>"; };
-		9CACFC1320D6A488006F71E9 /* LandingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LandingScene.sks; sourceTree = "<group>"; };
+		9CACFC1520D6AF5B006F71E9 /* LandingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScene.swift; sourceTree = "<group>"; };
 		A29EC141410EDA931DB7152E /* Pods_Marvelous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97FDDBF2FB902D2E9CEFF6A /* Pods-Marvelous WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous WatchKit App/Pods-Marvelous WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		C140D6412E55B76FDAB5586A /* Pods-Marvelous WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvelous WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvelous WatchKit App/Pods-Marvelous WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -256,12 +256,12 @@
 		9CA030C020D1BA57006F20A3 /* Marvelous WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9CACFC1320D6A488006F71E9 /* LandingScene.sks */,
 				9CA0BBA720D1DC7900BD380D /* Marvelous WatchKit Extension.entitlements */,
 				9CA030C120D1BA57006F20A3 /* InterfaceController.swift */,
 				9CA030C320D1BA57006F20A3 /* ExtensionDelegate.swift */,
 				9CA030C520D1BA58006F20A3 /* Assets.xcassets */,
 				9CA030C720D1BA58006F20A3 /* Info.plist */,
+				9CACFC1520D6AF5B006F71E9 /* LandingScene.swift */,
 				9CACFC1120D5DCF0006F71E9 /* SKRenderer.swift */,
 			);
 			path = "Marvelous WatchKit Extension";
@@ -493,7 +493,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CACFC1420D6A489006F71E9 /* LandingScene.sks in Resources */,
 				9CA030B620D1BA57006F20A3 /* Assets.xcassets in Resources */,
 				9CA030B420D1BA54006F20A3 /* Interface.storyboard in Resources */,
 			);
@@ -650,6 +649,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CACFC1820D6B155006F71E9 /* LandingScene.swift in Sources */,
 				9CA030C420D1BA57006F20A3 /* ExtensionDelegate.swift in Sources */,
 				9CA030C220D1BA57006F20A3 /* InterfaceController.swift in Sources */,
 				9CACFC1220D5DCF0006F71E9 /* SKRenderer.swift in Sources */,
