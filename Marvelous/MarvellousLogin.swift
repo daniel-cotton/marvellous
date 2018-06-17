@@ -50,5 +50,6 @@ class MarvellousLogin: UIViewController {
         storePreference(key: "access_token", value: query["access_token"]!);
         storePreference(key: "token_type", value: query["token_type"]!);
 //        print("Ret pref", getPreference(key: "access_token"));
+        self.performSegue(withIdentifier: "loginSegue", sender: self)
     }
 }

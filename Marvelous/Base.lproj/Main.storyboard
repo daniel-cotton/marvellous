@@ -194,7 +194,7 @@ e.g. https://marvelapp.com/</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1055" y="576"/>
         </scene>
         <!--Marvellous Login-->
         <scene sceneID="vRw-Ka-wZL">
@@ -223,10 +223,13 @@ e.g. https://marvelapp.com/</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bza-as-6xs"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginSegue" id="EZ5-PN-FMC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy1-tV-NXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="827.13643178410803"/>
+            <point key="canvasLocation" x="-78" y="577"/>
         </scene>
     </scenes>
 </document>
