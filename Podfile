@@ -6,6 +6,7 @@ target 'Marvelous' do
   use_frameworks!
 
   # Pods for Marvelous
+  pod 'Apollo'
   pod 'SwiftyJSON', '~> 4.0'
   
   target 'MarvelousTests' do

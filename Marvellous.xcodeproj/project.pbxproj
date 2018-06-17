@@ -11,6 +11,12 @@
 		50CAFD29C8A4A42D63ECD11A /* Pods_Marvelous_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2D65374F07E06254F0B356 /* Pods_Marvelous_WatchKit_Extension.framework */; };
 		5CB3E40B7847B59EBE0E3CF4 /* Pods_Marvelous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29EC141410EDA931DB7152E /* Pods_Marvelous.framework */; };
 		618B04D187632E87B0510984 /* Pods_MarvelousUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3A217929996FEAE3132A64 /* Pods_MarvelousUITests.framework */; };
+		9C20D82E20D7009600C1BDA3 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D82D20D7009600C1BDA3 /* schema.json */; };
+		9C20D83020D7014800C1BDA3 /* MainQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D82F20D7014800C1BDA3 /* MainQuery.graphql */; };
+		9C20D83420D70E8D00C1BDA3 /* CollectionViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83320D70E8D00C1BDA3 /* CollectionViewCard.swift */; };
+		9C20D83620D70FE400C1BDA3 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83520D70FE400C1BDA3 /* Project.swift */; };
+		9C20D83A20D717AD00C1BDA3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83920D717AD00C1BDA3 /* API.swift */; };
+		9C20D83C20D71A3F00C1BDA3 /* baseline-watch-24px.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D83B20D71A3E00C1BDA3 /* baseline-watch-24px.png */; };
 		9C26532920D1CB310010238C /* SwiftyJSON.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C26532820D1CB310010238C /* SwiftyJSON.swift */; };
 		9C67A79720D6D08000A4FA8A /* MarvellousLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */; };
 		9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */; };
@@ -98,6 +104,12 @@
 		6AE716EF1EB756DC83AC0C6E /* Pods-MarvelousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousTests/Pods-MarvelousTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B2D65374F07E06254F0B356 /* Pods_Marvelous_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelous_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F2D4C4459C4F990CA367A3 /* Pods-MarvelousUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousUITests/Pods-MarvelousUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C20D82D20D7009600C1BDA3 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = SOURCE_ROOT; };
+		9C20D82F20D7014800C1BDA3 /* MainQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainQuery.graphql; sourceTree = "<group>"; };
+		9C20D83320D70E8D00C1BDA3 /* CollectionViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCard.swift; sourceTree = "<group>"; };
+		9C20D83520D70FE400C1BDA3 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		9C20D83920D717AD00C1BDA3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9C20D83B20D71A3E00C1BDA3 /* baseline-watch-24px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baseline-watch-24px.png"; sourceTree = "<group>"; };
 		9C26532820D1CB310010238C /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Pods/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvellousLogin.swift; sourceTree = "<group>"; };
 		9CA0308520D1BA4D006F20A3 /* Marvelous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvelous.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -215,14 +227,20 @@
 		9CA0308720D1BA4D006F20A3 /* Marvelous */ = {
 			isa = PBXGroup;
 			children = (
+				9C20D83920D717AD00C1BDA3 /* API.swift */,
+				9C20D82D20D7009600C1BDA3 /* schema.json */,
 				9CA0BBA620D1D26D00BD380D /* Marvelous.entitlements */,
 				9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */,
 				9CA0308A20D1BA4D006F20A3 /* ViewController.swift */,
 				9CA0308C20D1BA4D006F20A3 /* Main.storyboard */,
 				9CA0308F20D1BA54006F20A3 /* Assets.xcassets */,
+				9C20D83B20D71A3E00C1BDA3 /* baseline-watch-24px.png */,
 				9CA0309120D1BA54006F20A3 /* LaunchScreen.storyboard */,
 				9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */,
 				9CA0309420D1BA54006F20A3 /* Info.plist */,
+				9C20D82F20D7014800C1BDA3 /* MainQuery.graphql */,
+				9C20D83320D70E8D00C1BDA3 /* CollectionViewCard.swift */,
+				9C20D83520D70FE400C1BDA3 /* Project.swift */,
 			);
 			path = Marvelous;
 			sourceTree = "<group>";
@@ -310,6 +328,7 @@
 			buildConfigurationList = 9CA030D220D1BA58006F20A3 /* Build configuration list for PBXNativeTarget "Marvelous" */;
 			buildPhases = (
 				5344D08437BCE7CC9E9A89E1 /* [CP] Check Pods Manifest.lock */,
+				9C20D82A20D6FE8B00C1BDA3 /* ShellScript */,
 				9CA0308120D1BA4D006F20A3 /* Sources */,
 				9CA0308220D1BA4D006F20A3 /* Frameworks */,
 				9CA0308320D1BA4D006F20A3 /* Resources */,
@@ -472,8 +491,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C20D82E20D7009600C1BDA3 /* schema.json in Resources */,
+				9C20D83020D7014800C1BDA3 /* MainQuery.graphql in Resources */,
 				9CA0309320D1BA54006F20A3 /* LaunchScreen.storyboard in Resources */,
 				9CA0309020D1BA54006F20A3 /* Assets.xcassets in Resources */,
+				9C20D83C20D71A3F00C1BDA3 /* baseline-watch-24px.png in Resources */,
 				9CA0308E20D1BA4D006F20A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,16 +613,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Marvelous/Pods-Marvelous-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvelous/Pods-Marvelous-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		9C20D82A20D6FE8B00C1BDA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift\n";
 		};
 		E10F12A0E6A2B34B22AAB6BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -629,7 +666,10 @@
 			files = (
 				9CA0308B20D1BA4D006F20A3 /* ViewController.swift in Sources */,
 				9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */,
+				9C20D83420D70E8D00C1BDA3 /* CollectionViewCard.swift in Sources */,
 				9C67A79720D6D08000A4FA8A /* MarvellousLogin.swift in Sources */,
+				9C20D83A20D717AD00C1BDA3 /* API.swift in Sources */,
+				9C20D83620D70FE400C1BDA3 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

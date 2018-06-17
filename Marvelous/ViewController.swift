@@ -9,25 +9,19 @@
 import UIKit
 import SwiftyJSON
 import WatchConnectivity
+import Apollo;
 
-class ViewController: UIViewController, WCSessionDelegate {
-    var current : Int = 1;
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        
-    }
-    
-    private var imageMap: [String: UIImage] = [:]
+class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var projectIdField: UITextField!;
     @IBOutlet weak var headerView: UIView!;
+    @IBOutlet weak var collectionView: UICollectionView!;
+    
+    var current : Int = 1;
+    
+    private var imageMap: [String: UIImage] = [:];
+    private var apollo: ApolloClient? = nil;
+    private var projects: Set<Project> = Set<Project>();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +34,50 @@ class ViewController: UIViewController, WCSessionDelegate {
         headerView.layer.shadowOffset = CGSize.zero
         headerView.layer.shadowRadius = 1
         headerView.layer.shadowPath = UIBezierPath(rect: headerView.bounds).cgPath;
-
+        apollo = {
+            let configuration = URLSessionConfiguration.default
+            // Add additional headers as needed
+            configuration.httpAdditionalHeaders = ["Authorization": "Bearer " + getPreference(key: "access_token")] // Replace `<token>`
+            
+            let url = URL(string: "https://marvelapp.com/graphql")!
+            
+            return ApolloClient(networkTransport: HTTPNetworkTransport(url: url, configuration: configuration))
+        }();
+        apollo?.fetch(query: MainQueryQuery()) { (result, error) in
+            let data = result?.data;
+            for (project) in (data?.user?.projects?.edges)! {
+                let projectName : String = (project?.node?.name)!;
+                let projectPreviewURL : String = (project?.node?.screens?.edges[0]?.node?.content?.url)!;
+                print(projectName, projectPreviewURL);
+                self.projects.insert(Project(project: projectName, imgUrl: projectPreviewURL));
+            }
+            print(self.projects)
+            self.collectionView.reloadSections(IndexSet(integer: 0))
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.projects.count;
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCard;
+        let project = projects[projects.index(projects.startIndex, offsetBy: indexPath.row)];
+        cell.displayContent(project: project);
+//        return self.projects.count;
+        return cell;
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -229,4 +266,3 @@ class ViewController: UIViewController, WCSessionDelegate {
     }
 
 }
-

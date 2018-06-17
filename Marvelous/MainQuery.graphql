@@ -1,0 +1,41 @@
+fragment image on ImageScreen {
+filename
+url
+height
+width
+}
+
+
+query MainQuery {
+user {
+username
+projects {
+pageInfo {
+hasNextPage
+endCursor
+}
+edges {
+node {
+pk
+name
+prototypeUrl
+screens(first: 1) {
+edges {
+node {
+externalId
+name
+uploadUrl
+sourcePlatform
+sectionPk
+content {
+__typename
+...image
+}
+}
+}
+}
+}
+}
+}
+}
+}

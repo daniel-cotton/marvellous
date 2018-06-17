@@ -27,6 +27,14 @@ class MarvellousLogin: UIViewController {
         }
 
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated);
+        let token = getPreference(key: "access_token");
+        print(getPreference(key: "access_token"), token.isEmpty)
+        if (token.isEmpty == false) {
+            self.performSegue(withIdentifier: "loginSegue", sender: self)
+        }
+    }
     func storePreference(key: String, value: String) {
         let defaults = UserDefaults(suiteName: "group.uk.co.daniel-cotton.marvelous")
         defaults?.set(value, forKey: key);
