@@ -81,6 +81,18 @@
             ReferencedContainer = "container:Marvellous.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "MARVEL_CLIENT_ID"
+            value = "jJ6f8spgV672XMD3AKxmTpMgZmPJ60tzesFeaURJ"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "MARVEL_CLIENT_SECRET"
+            value = "vcBNsk5Hdv041QAeTEOAz6wlC2WEXrwarpthbWDWemmkqnTL1EIYavGNKTujBa2KYwaf6MvrSgsXYlUSBHNLjHmUtKyIH1sOWdA2brkHh7a5R5OyfJi9xCP9Vuw1WHJV"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

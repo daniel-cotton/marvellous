@@ -12,6 +12,7 @@
 		5CB3E40B7847B59EBE0E3CF4 /* Pods_Marvelous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29EC141410EDA931DB7152E /* Pods_Marvelous.framework */; };
 		618B04D187632E87B0510984 /* Pods_MarvelousUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3A217929996FEAE3132A64 /* Pods_MarvelousUITests.framework */; };
 		9C26532920D1CB310010238C /* SwiftyJSON.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C26532820D1CB310010238C /* SwiftyJSON.swift */; };
+		9C67A79720D6D08000A4FA8A /* MarvellousLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */; };
 		9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */; };
 		9CA0308B20D1BA4D006F20A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308A20D1BA4D006F20A3 /* ViewController.swift */; };
 		9CA0308E20D1BA4D006F20A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0308C20D1BA4D006F20A3 /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		6B2D65374F07E06254F0B356 /* Pods_Marvelous_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvelous_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F2D4C4459C4F990CA367A3 /* Pods-MarvelousUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelousUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelousUITests/Pods-MarvelousUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9C26532820D1CB310010238C /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Pods/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvellousLogin.swift; sourceTree = "<group>"; };
 		9CA0308520D1BA4D006F20A3 /* Marvelous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvelous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA0308A20D1BA4D006F20A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				9CA0308C20D1BA4D006F20A3 /* Main.storyboard */,
 				9CA0308F20D1BA54006F20A3 /* Assets.xcassets */,
 				9CA0309120D1BA54006F20A3 /* LaunchScreen.storyboard */,
+				9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */,
 				9CA0309420D1BA54006F20A3 /* Info.plist */,
 			);
 			path = Marvelous;
@@ -626,6 +629,7 @@
 			files = (
 				9CA0308B20D1BA4D006F20A3 /* ViewController.swift in Sources */,
 				9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */,
+				9C67A79720D6D08000A4FA8A /* MarvellousLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
