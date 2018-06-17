@@ -15,8 +15,8 @@
 		9C20D83020D7014800C1BDA3 /* MainQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D82F20D7014800C1BDA3 /* MainQuery.graphql */; };
 		9C20D83420D70E8D00C1BDA3 /* CollectionViewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83320D70E8D00C1BDA3 /* CollectionViewCard.swift */; };
 		9C20D83620D70FE400C1BDA3 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83520D70FE400C1BDA3 /* Project.swift */; };
-		9C20D83A20D717AD00C1BDA3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83920D717AD00C1BDA3 /* API.swift */; };
 		9C20D83C20D71A3F00C1BDA3 /* baseline-watch-24px.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C20D83B20D71A3E00C1BDA3 /* baseline-watch-24px.png */; };
+		9C20D83E20D71ED300C1BDA3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C20D83D20D71ED300C1BDA3 /* API.swift */; };
 		9C26532920D1CB310010238C /* SwiftyJSON.swift in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C26532820D1CB310010238C /* SwiftyJSON.swift */; };
 		9C67A79720D6D08000A4FA8A /* MarvellousLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */; };
 		9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */; };
@@ -108,8 +108,8 @@
 		9C20D82F20D7014800C1BDA3 /* MainQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainQuery.graphql; sourceTree = "<group>"; };
 		9C20D83320D70E8D00C1BDA3 /* CollectionViewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCard.swift; sourceTree = "<group>"; };
 		9C20D83520D70FE400C1BDA3 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		9C20D83920D717AD00C1BDA3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9C20D83B20D71A3E00C1BDA3 /* baseline-watch-24px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baseline-watch-24px.png"; sourceTree = "<group>"; };
+		9C20D83D20D71ED300C1BDA3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9C26532820D1CB310010238C /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Pods/SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		9C67A79620D6D08000A4FA8A /* MarvellousLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvellousLogin.swift; sourceTree = "<group>"; };
 		9CA0308520D1BA4D006F20A3 /* Marvelous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvelous.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,7 +227,7 @@
 		9CA0308720D1BA4D006F20A3 /* Marvelous */ = {
 			isa = PBXGroup;
 			children = (
-				9C20D83920D717AD00C1BDA3 /* API.swift */,
+				9C20D83D20D71ED300C1BDA3 /* API.swift */,
 				9C20D82D20D7009600C1BDA3 /* schema.json */,
 				9CA0BBA620D1D26D00BD380D /* Marvelous.entitlements */,
 				9CA0308820D1BA4D006F20A3 /* AppDelegate.swift */,
@@ -668,7 +668,7 @@
 				9CA0308920D1BA4D006F20A3 /* AppDelegate.swift in Sources */,
 				9C20D83420D70E8D00C1BDA3 /* CollectionViewCard.swift in Sources */,
 				9C67A79720D6D08000A4FA8A /* MarvellousLogin.swift in Sources */,
-				9C20D83A20D717AD00C1BDA3 /* API.swift in Sources */,
+				9C20D83E20D71ED300C1BDA3 /* API.swift in Sources */,
 				9C20D83620D70FE400C1BDA3 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

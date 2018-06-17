@@ -65,7 +65,7 @@ public enum SourcePlatformEnum: RawRepresentable, Equatable, Apollo.JSONDecodabl
 
 public final class MainQueryQuery: GraphQLQuery {
   public static let operationString =
-    "query MainQuery {\n  user {\n    __typename\n    username\n    projects {\n      __typename\n      pageInfo {\n        __typename\n        hasNextPage\n        endCursor\n      }\n      edges {\n        __typename\n        node {\n          __typename\n          pk\n          name\n          prototypeUrl\n          screens(first: 1) {\n            __typename\n            edges {\n              __typename\n              node {\n                __typename\n                externalId\n                name\n                uploadUrl\n                sourcePlatform\n                sectionPk\n                content {\n                  __typename\n                  ...image\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+    "query MainQuery {\n  user {\n    __typename\n    username\n    projects {\n      __typename\n      pageInfo {\n        __typename\n        hasNextPage\n        endCursor\n      }\n      edges {\n        __typename\n        node {\n          __typename\n          createdAt\n          pk\n          name\n          prototypeUrl\n          screens(first: 1) {\n            __typename\n            edges {\n              __typename\n              node {\n                __typename\n                externalId\n                name\n                uploadUrl\n                sourcePlatform\n                sectionPk\n                content {\n                  __typename\n                  ...image\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
 
   public static var requestString: String { return operationString.appending(Image.fragmentString) }
 
@@ -283,6 +283,7 @@ public final class MainQueryQuery: GraphQLQuery {
 
             public static let selections: [GraphQLSelection] = [
               GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+              GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
               GraphQLField("pk", type: .nonNull(.scalar(Int.self))),
               GraphQLField("name", type: .nonNull(.scalar(String.self))),
               GraphQLField("prototypeUrl", type: .nonNull(.scalar(String.self))),
@@ -295,8 +296,8 @@ public final class MainQueryQuery: GraphQLQuery {
               self.snapshot = snapshot
             }
 
-            public init(pk: Int, name: String, prototypeUrl: String, screens: Screen? = nil) {
-              self.init(snapshot: ["__typename": "ProjectNode", "pk": pk, "name": name, "prototypeUrl": prototypeUrl, "screens": screens.flatMap { (value: Screen) -> Snapshot in value.snapshot }])
+            public init(createdAt: String, pk: Int, name: String, prototypeUrl: String, screens: Screen? = nil) {
+              self.init(snapshot: ["__typename": "ProjectNode", "createdAt": createdAt, "pk": pk, "name": name, "prototypeUrl": prototypeUrl, "screens": screens.flatMap { (value: Screen) -> Snapshot in value.snapshot }])
             }
 
             public var __typename: String {
@@ -305,6 +306,16 @@ public final class MainQueryQuery: GraphQLQuery {
               }
               set {
                 snapshot.updateValue(newValue, forKey: "__typename")
+              }
+            }
+
+            /// Project creation time
+            public var createdAt: String {
+              get {
+                return snapshot["createdAt"]! as! String
+              }
+              set {
+                snapshot.updateValue(newValue, forKey: "createdAt")
               }
             }
 

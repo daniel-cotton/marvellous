@@ -16,6 +16,7 @@ endCursor
 }
 edges {
 node {
+createdAt
 pk
 name
 prototypeUrl

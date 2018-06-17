@@ -45,12 +45,16 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
         }();
         apollo?.fetch(query: MainQueryQuery()) { (result, error) in
             let data = result?.data;
-            for (project) in (data?.user?.projects?.edges)! {
+            let projectArray = data?.user?.projects?.edges;
+            for (project) in (projectArray)! {
                 let projectName : String = (project?.node?.name)!;
+                let prototypeUrl : String = (project?.node?.prototypeUrl)!;
                 let projectPreviewURL : String = (project?.node?.screens?.edges[0]?.node?.content?.url)!;
+                let createdDate: String = (project?.node!.createdAt)!;
                 print(projectName, projectPreviewURL);
-                self.projects.insert(Project(project: projectName, imgUrl: projectPreviewURL));
+                self.projects.insert(Project(project: projectName, imgUrl: projectPreviewURL, prototypeUrl: prototypeUrl, createdDate: createdDate));
             }
+            self.projects = Set<Project>(self.projects.sorted(by: { $0.createdDate < $1.createdDate }));
             print(self.projects)
             self.collectionView.reloadSections(IndexSet(integer: 0))
         }
@@ -62,12 +66,26 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCard;
-        let project = projects[projects.index(projects.startIndex, offsetBy: indexPath.row)];
+        let project = self.projects.sorted(by: { $0.createdDate > $1.createdDate })[indexPath.row];
         cell.displayContent(project: project);
-//        return self.projects.count;
+        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
         return cell;
     }
     
+    @objc func tap(_ sender: UITapGestureRecognizer) {
+        
+        let location = sender.location(in: self.collectionView)
+        let indexPath = self.collectionView.indexPathForItem(at: location)
+        
+        if let index = indexPath {
+            let project = self.projects.sorted(by: { $0.createdDate > $1.createdDate })[index.row];
+            
+            startLoadingOnWatch();
+            fetchProjectDetails(projectID: project.prototypeId);
+            fetchProjectHotspots(projectID: project.prototypeId);
+        }
+    }
+
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
