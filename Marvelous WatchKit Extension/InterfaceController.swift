@@ -98,8 +98,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     
     func potentiallyStartTimer(screenId : String) {
-        var pageHotspots : [[String : Any]] = self.hotspots[screenId]!;
-        for (hotspot) : ([String : Any]) in pageHotspots {
+        var pageHotspots : [[String : Any]]? = self.hotspots[screenId];
+        if (pageHotspots == nil) {
+            return;
+        }
+        for (hotspot) : ([String : Any]) in pageHotspots! {
             let type : String = hotspot["action"] as! String;
             if (type == "timer") {
                 let duration : Float = hotspot["timer"] as! Float;
@@ -168,9 +171,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             print("Received Hotspots", hotspots);
         } else {
             print("In else");
-            guard let image = UIImage(data: message["d"] as! Data) else {
+            guard let imgUrl : String = message["img-url"] as! String else {
                 return
             }
+            let url:URL = URL(string: imgUrl)!
+            var data:NSData = NSData(contentsOf: url)!
+            var image = UIImage(data: data as Data)!
             print("New image : \(message["t"])");
             // throw to the main queue to upate properly
             DispatchQueue.main.async() { [weak self] in

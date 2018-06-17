@@ -146,12 +146,10 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
         replyHandler(messageData)
     }
     
-    func pingImageToWatch(image: UIImage, title : String, count : Int, id : String, width : Int, height : Int) {
+    func pingImageToWatch(imgUrl: String, title : String, count : Int, id : String, width : Int, height : Int) {
         DispatchQueue.main.async() {
             
-            let data = UIImageJPEGRepresentation(image, 1.0)
-            
-            WCSession.default.sendMessage(["action": "image", "d": data!, "t": title, "c": count
+            WCSession.default.sendMessage(["action": "image", "img-url": imgUrl, "t": title, "c": count
                 , "id": id, "width": width, "height": height], replyHandler: nil);
         }
     }
@@ -207,7 +205,7 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
                     var id : String = subJson["id"].stringValue;
                     var width : Int = subJson["width"].intValue;
                     var height : Int = subJson["height"].intValue;
-                    self.pingImageToWatch(image: image, title: key, count: count, id: id, width: width, height: height);
+                    self.pingImageToWatch(imgUrl: imgUrl, title: key, count: count, id: id, width: width, height: height);
                     
                     if (self.imageMap.count == images.count) {
                         self.stopLoadingOnWatch();
