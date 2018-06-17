@@ -17,6 +17,7 @@
                         <group width="1" alignment="left" layout="overlap" id="vfG-05-mbq">
                             <items>
                                 <imageView width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="BvN-5g-UJW"/>
+                                <spriteKitScene alignment="left" scene="LandingScene.sks" id="KnP-Vj-Gif"/>
                                 <imageView width="30" height="30" alignment="center" verticalAlignment="center" animationDuration="1" id="JnQ-Ry-VQK"/>
                             </items>
                             <gestureRecognizers>
@@ -32,6 +33,7 @@
                     <connections>
                         <outlet property="baseImage" destination="BvN-5g-UJW" id="L38-ce-Ewn"/>
                         <outlet property="loadingSpinner" destination="JnQ-Ry-VQK" id="ztE-8C-nqB"/>
+                        <outlet property="sceneInterface" destination="KnP-Vj-Gif" id="3rr-8f-dIv"/>
                     </connections>
                 </controller>
             </objects>

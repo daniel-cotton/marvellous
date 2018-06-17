@@ -9,6 +9,7 @@
 import WatchKit
 import Foundation
 import WatchConnectivity
+import SpriteKit;
 
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
@@ -16,12 +17,24 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     @IBOutlet var loadingSpinner : WKInterfaceImage!;
     @IBOutlet var baseImage: WKInterfaceImage!
     @IBOutlet var group : WKInterfaceGroup!;
+    @IBOutlet weak var sceneInterface: WKInterfaceSKScene!;
+    
     var active : Int = 1;
     var imageMap : [String : UIImage] = [:];
     var imageSizes : [String : [Int]] = [:];
     var hotspots : [String : [[String : Any]]] = [:];
     var activeScreen : String = "";
-    
+    let downReveal = SKTransition.reveal(with: .down,
+                                     duration: 0.5)
+    let upReveal = SKTransition.reveal(with: .up,
+                                         duration: 0.5)
+    let leftReveal = SKTransition.reveal(with: .left,
+                                         duration: 0.5)
+    let rightReveal = SKTransition.reveal(with: .right,
+                                         duration: 0.5)
+    let fadeReveal = SKTransition.fade(with: UIColor.black,
+                                         duration: 0.5)
+
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
@@ -73,8 +86,14 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     }
     func segueToScreen(screenId : String) {
         let image : UIImage = imageMap[screenId]!;
+        let viewBounds : CGRect = WKInterfaceDevice.current().screenBounds;
         activeScreen = screenId;
-        self.baseImage.setImage(image);
+//        sceneInterface.
+//        self.baseImage.setImage(image);
+        let scene : SKRenderer = SKRenderer(size: CGSize(width: viewBounds.width, height: viewBounds.height));
+        scene.setTexture(image: image);
+        sceneInterface.presentScene(scene, transition: fadeReveal);
+        
         potentiallyStartTimer(screenId: screenId);
     }
     
