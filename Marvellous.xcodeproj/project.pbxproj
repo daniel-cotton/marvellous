@@ -434,7 +434,7 @@
 						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -450,7 +450,7 @@
 						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -458,7 +458,7 @@
 						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -872,8 +872,8 @@
 			baseConfigurationReference = 4AD131B793B88025E9351DEC /* Pods-Marvelous WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit Extension/Marvelous WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = "Marvelous WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -883,6 +883,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "437ed54b-6539-49a0-86f9-4b1091a8aa88";
+				PROVISIONING_PROFILE_SPECIFIER = DanHockey;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -896,8 +898,8 @@
 			baseConfigurationReference = D4A05F2CB673AECF35C09F9F /* Pods-Marvelous WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit Extension/Marvelous WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = "Marvelous WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -907,6 +909,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "437ed54b-6539-49a0-86f9-4b1091a8aa88";
+				PROVISIONING_PROFILE_SPECIFIER = DanHockey;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -921,13 +925,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit App/Marvelous WatchKit App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 76SVEK49W5;
 				IBSC_MODULE = Marvelous_WatchKit_Extension;
 				INFOPLIST_FILE = "Marvelous WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "437ed54b-6539-49a0-86f9-4b1091a8aa88";
+				PROVISIONING_PROFILE_SPECIFIER = DanHockey;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -942,13 +948,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Marvelous WatchKit App/Marvelous WatchKit App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 76SVEK49W5;
 				IBSC_MODULE = Marvelous_WatchKit_Extension;
 				INFOPLIST_FILE = "Marvelous WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "437ed54b-6539-49a0-86f9-4b1091a8aa88";
+				PROVISIONING_PROFILE_SPECIFIER = DanHockey;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -962,8 +970,8 @@
 			baseConfigurationReference = ECDB882518462DD51A493BCC /* Pods-Marvelous.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Marvelous/Marvelous.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = Marvelous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -972,6 +980,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "437ed54b-6539-49a0-86f9-4b1091a8aa88";
+				PROVISIONING_PROFILE_SPECIFIER = DanHockey;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -982,8 +992,8 @@
 			baseConfigurationReference = 33293BC51D7133C11C8767F3 /* Pods-Marvelous.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Marvelous/Marvelous.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 76SVEK49W5;
 				INFOPLIST_FILE = Marvelous/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -992,6 +1002,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.daniel-cotton.Marvelous";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "437ed54b-6539-49a0-86f9-4b1091a8aa88";
+				PROVISIONING_PROFILE_SPECIFIER = DanHockey;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
