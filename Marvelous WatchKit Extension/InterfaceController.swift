@@ -32,8 +32,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                                          duration: 0.5)
     let rightReveal = SKTransition.reveal(with: .right,
                                          duration: 0.5)
-    let fadeReveal = SKTransition.fade(with: UIColor.black,
-                                         duration: 0.5)
+    let fadeReveal = SKTransition.crossFade(withDuration: 0.5)
 
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
