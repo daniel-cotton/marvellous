@@ -22,6 +22,7 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
     private var imageMap: [String: UIImage] = [:];
     private var apollo: ApolloClient? = nil;
     private var projects: Set<Project> = Set<Project>();
+    private var sortedProjects: [Project] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +66,8 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
                 print(projectName, projectPreviewURL);
                 self.projects.insert(Project(project: projectName, imgUrl: projectPreviewURL, prototypeUrl: prototypeUrl, createdDate: createdDate));
             }
-            self.projects = Set<Project>(self.projects.sorted(by: { $0.createdDate < $1.createdDate }));
-            print(self.projects)
+            self.sortedProjects = self.projects.sorted(by: { $0.createdDate > $1.createdDate });
+            print(self.sortedProjects)
             self.collectionView.reloadSections(IndexSet(integer: 0))
         }
     }
@@ -77,9 +78,9 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "collectionViewCell", for: indexPath) as! CollectionViewCard;
-        let project = self.projects.sorted(by: { $0.createdDate > $1.createdDate })[indexPath.row];
+        let project = self.sortedProjects[indexPath.row];
         cell.displayContent(project: project);
-        cell.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
+        cell.cardView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap(_:))))
         return cell;
     }
     
@@ -87,13 +88,22 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
         
         let location = sender.location(in: self.collectionView)
         let indexPath = self.collectionView.indexPathForItem(at: location)
-        
+        print("Tap:", location, indexPath);
         if let index = indexPath {
-            let project = self.projects.sorted(by: { $0.createdDate > $1.createdDate })[index.row];
+            let project = self.sortedProjects[index.row];
+            let refreshAlert = UIAlertController(title: "Sync?", message: "Do you want to sync " + project.projectName + " to your watch?", preferredStyle: UIAlertControllerStyle.alert)
             
-            startLoadingOnWatch();
-            fetchProjectDetails(projectID: project.prototypeId);
-            fetchProjectHotspots(projectID: project.prototypeId);
+            refreshAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+                self.startLoadingOnWatch();
+                self.fetchProjectDetails(projectID: project.prototypeId);
+                self.fetchProjectHotspots(projectID: project.prototypeId);
+            }))
+            
+            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+                print("Cancel clicked.")
+            }))
+            
+            present(refreshAlert, animated: true, completion: nil)
         }
     }
 

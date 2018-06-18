@@ -13,6 +13,7 @@ class CollectionViewCard: UICollectionViewCell {
     @IBOutlet var image: UIImageView!;
     @IBOutlet var title: UILabel!;
     @IBOutlet var cardView: UIView!;
+    @IBOutlet public var clickableRow: UIView!;
     
     func displayContent(project: Project) {
         cardView.layer.shadowColor = UIColor.black.cgColor
