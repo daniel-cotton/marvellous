@@ -187,7 +187,7 @@ class ViewController: UIViewController, WCSessionDelegate, UICollectionViewDeleg
         
         let urlWithParams = "https://marvelapp.com/api/project-retrieve/" + projectID;
         
-        
+        self.imageMap = [:];
         let myUrl = NSURL(string: urlWithParams);
         
         let request = URLRequest(url: myUrl! as URL)
